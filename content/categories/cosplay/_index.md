@@ -1,6 +1,6 @@
 ---
-title: Example Category
-description: A description of this category
+title: Cosplay
+description: Adventures in applied nerditude
 image:
 
 # Badge style
