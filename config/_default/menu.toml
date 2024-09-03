@@ -22,3 +22,11 @@ url = "https://www.instagram.com/horvaticus"
 
 [social.params]
 icon = "brand-instagram"
+
+[[social]]
+identifier = "printables"
+name = "Printables"
+url = "https://www.printables.com/@horvaticus"
+
+[social.params]
+icon = "brand-printables"
