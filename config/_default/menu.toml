@@ -24,9 +24,9 @@ url = "https://www.instagram.com/horvaticus"
 icon = "brand-instagram"
 
 [[social]]
-identifier = "printables"
-name = "Printables"
-url = "https://www.printables.com/@horvaticus"
+identifier = "twitter"
+name = "Twitter"
+url = "https://x.com/horvaticus"
 
 [social.params]
-icon = "brand-printables"
+icon = "brand-twitter"
