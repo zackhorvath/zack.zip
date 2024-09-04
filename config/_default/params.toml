@@ -6,7 +6,7 @@ favicon = "/favicon.png"
 
 [footer]
 since = 2014
-customText = "ICA Systems // US WEST"
+customText = "Hosted in Zack's Garage"
 
 [dateFormat]
 published = "Jan 02, 2006"
