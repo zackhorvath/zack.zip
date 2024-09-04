@@ -33,7 +33,7 @@ icon = "brand-bluesky"
 
 [[social]]
 identifier = "3-threads"
-name = "BlueSky"
+name = "Threads"
 url = "https://www.threads.net/@horvaticus"
 
 [social.params]
