@@ -32,7 +32,15 @@ url = "https://bsky.app/profile/zack.zip"
 icon = "brand-bluesky"
 
 [[social]]
-identifier = "3-twitter"
+identifier = "3-threads"
+name = "BlueSky"
+url = "https://www.threads.net/@horvaticus"
+
+[social.params]
+icon = "brand-threads"
+
+[[social]]
+identifier = "4-twitter"
 name = "The website formerly known as Twitter"
 url = "https://x.com/horvaticus"
 
@@ -47,10 +55,10 @@ icon = "brand-twitter"
 # [social.params]
 # icon = "brand-twitch"
 
-[[social]]
-identifier = "4-github"
-name = "GitHub"
-url = "https://github.com/zackhorvath"
+# [[social]]
+# identifier = "5-github"
+# name = "GitHub"
+# url = "https://github.com/zackhorvath"
 
-[social.params]
-icon = "brand-github"
+# [social.params]
+# icon = "brand-github"
