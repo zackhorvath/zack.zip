@@ -45,7 +45,7 @@ name = "The website formerly known as Twitter"
 url = "https://x.com/horvaticus"
 
 [social.params]
-icon = "brand-x"
+icon = "brand-twitter"
 
 # [[social]]
 # identifier = "twitch"
