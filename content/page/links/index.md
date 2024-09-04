@@ -15,7 +15,7 @@ links:
     image: brand-makerworld.svg
 menu:
     main: 
-        weight: 4
+        weight: 3
         params:
             icon: link
 

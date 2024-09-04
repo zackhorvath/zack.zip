@@ -1,11 +1,10 @@
 ---
 title: "About Me"
-date: 2022-03-06
-layout: "archives"
-slug: "archives"
+slug: "about"
 menu:
     main:
         weight: 2
         params: 
-            icon: archives
+            icon: terminal
+comments: false
 ---
