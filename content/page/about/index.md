@@ -7,4 +7,6 @@ menu:
         params: 
             icon: terminal
 comments: false
+license: false
+readingTime: false
 ---

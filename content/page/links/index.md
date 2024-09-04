@@ -18,6 +18,7 @@ menu:
         weight: 3
         params:
             icon: link
-
+readingTime: false
+license: false
 comments: false
 ---
