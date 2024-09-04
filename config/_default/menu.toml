@@ -40,6 +40,14 @@ url = "https://x.com/horvaticus"
 icon = "brand-twitter"
 
 [[social]]
+identifier = "twitch"
+name = "Twitch"
+url = "https://www.twitch.tv/horvaticus"
+
+[social.params]
+icon = "brand-twitch"
+
+[[social]]
 identifier = "github"
 name = "GitHub"
 url = "https://github.com/zackhorvath"
