@@ -8,14 +8,6 @@
 #newtab = true
 
 [[social]]
-identifier = "github"
-name = "GitHub"
-url = "https://github.com/zackhorvath"
-
-[social.params]
-icon = "brand-github"
-
-[[social]]
 identifier = "instagram"
 name = "Instagram"
 url = "https://www.instagram.com/horvaticus"
@@ -24,9 +16,33 @@ url = "https://www.instagram.com/horvaticus"
 icon = "brand-instagram"
 
 [[social]]
+identifier = "tiktok"
+name = "TikTok"
+url = "https://www.tiktok.com/@horvaticus"
+
+[social.params]
+icon = "brand-tiktok"
+
+[[social]]
+identifier = "bluesky"
+name = "BlueSky"
+url = "https://bsky.app/profile/zack.zip"
+
+[social.params]
+icon = "brand-bluesky"
+
+[[social]]
 identifier = "twitter"
-name = "Twitter"
+name = "The website formerly known as Twitter"
 url = "https://x.com/horvaticus"
 
 [social.params]
 icon = "brand-twitter"
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/zackhorvath"
+
+[social.params]
+icon = "brand-github"
