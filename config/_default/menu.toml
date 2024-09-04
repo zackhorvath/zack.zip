@@ -8,7 +8,7 @@
 #newtab = true
 
 [[social]]
-identifier = "1-instagram"
+identifier = "instagram"
 name = "Instagram"
 url = "https://www.instagram.com/horvaticus"
 
@@ -24,7 +24,7 @@ icon = "brand-instagram"
 # icon = "brand-tiktok"
 
 [[social]]
-identifier = "2-bluesky"
+identifier = "bluesky"
 name = "BlueSky"
 url = "https://bsky.app/profile/zack.zip"
 
@@ -32,7 +32,7 @@ url = "https://bsky.app/profile/zack.zip"
 icon = "brand-bluesky"
 
 [[social]]
-identifier = "3-threads"
+identifier = "threads"
 name = "Threads"
 url = "https://www.threads.net/@horvaticus"
 
@@ -40,12 +40,12 @@ url = "https://www.threads.net/@horvaticus"
 icon = "brand-threads"
 
 [[social]]
-identifier = "4-twitter"
+identifier = "xitter"
 name = "The website formerly known as Twitter"
 url = "https://x.com/horvaticus"
 
 [social.params]
-icon = "brand-twitter"
+icon = "brand-x"
 
 # [[social]]
 # identifier = "twitch"
