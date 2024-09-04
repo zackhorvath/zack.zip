@@ -6,7 +6,7 @@ favicon = "/favicon.png"
 
 [footer]
 since = 2014
-customText = "Hosted in Zack's Garage"
+customText = "Hosted in scenic Zack's Garage"
 
 [dateFormat]
 published = "Jan 02, 2006"
@@ -76,7 +76,7 @@ enabled = true
 
 ## Comments
 [comments]
-enabled = true
+enabled = false
 provider = "disqus"
 
 [comments.disqusjs]
