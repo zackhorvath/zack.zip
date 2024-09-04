@@ -8,23 +8,23 @@
 #newtab = true
 
 [[social]]
-identifier = "instagram"
+identifier = "1-instagram"
 name = "Instagram"
 url = "https://www.instagram.com/horvaticus"
 
 [social.params]
 icon = "brand-instagram"
 
-[[social]]
-identifier = "tiktok"
-name = "TikTok"
-url = "https://www.tiktok.com/@horvaticus"
+# [[social]]
+# identifier = "tiktok"
+# name = "TikTok"
+# url = "https://www.tiktok.com/@horvaticus"
 
-[social.params]
-icon = "brand-tiktok"
+# [social.params]
+# icon = "brand-tiktok"
 
 [[social]]
-identifier = "bluesky"
+identifier = "2-bluesky"
 name = "BlueSky"
 url = "https://bsky.app/profile/zack.zip"
 
@@ -32,23 +32,23 @@ url = "https://bsky.app/profile/zack.zip"
 icon = "brand-bluesky"
 
 [[social]]
-identifier = "twitter"
+identifier = "3-twitter"
 name = "The website formerly known as Twitter"
 url = "https://x.com/horvaticus"
 
 [social.params]
 icon = "brand-twitter"
 
-[[social]]
-identifier = "twitch"
-name = "Twitch"
-url = "https://www.twitch.tv/horvaticus"
+# [[social]]
+# identifier = "twitch"
+# name = "Twitch"
+# url = "https://www.twitch.tv/horvaticus"
 
-[social.params]
-icon = "brand-twitch"
+# [social.params]
+# icon = "brand-twitch"
 
 [[social]]
-identifier = "github"
+identifier = "4-github"
 name = "GitHub"
 url = "https://github.com/zackhorvath"
 
