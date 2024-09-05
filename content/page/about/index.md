@@ -14,7 +14,7 @@ image: zack-1.jpg
 ### Intro
 Hi I'm Zack, thanks for stopping by!
 
-By day I am a self-taught Staff-level DevOps Engineer who has an extremely deep background in various computer systems and programming langauges. Tech has always been my passion in life, and I've been lucky enough to be able to turn that into a career.
+By day I am a self-taught engineer who has an extremely deep background in various computer systems and programming langauges. Tech has always been my passion in life, and I've been lucky enough to be able to turn that into a career after dropping out of college three times.
 
 When I'm not at work, I'm a maker who is passionate about combining the highly technical with the highly creative. From jury rigging servers together to figuring out what adhesive to use between two different types of plastic, I love to challenge myself, and want to keep growing as a creator.
 
