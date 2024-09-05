@@ -6,15 +6,13 @@ menu:
         weight: 2
         params: 
             icon: terminal
+
+image: zack-1.jpg
 comments: false
 license: false
 readingTime: false
 ---
 ## Welcome to my garage!
-
-{{/* < figure src="zack-1.jpg" 
-alt="Reporting live from the 'Caffeination Station'" 
-title="Reporting live from the 'Caffeination Station'" > */}}
 
 I'm Zack, and it's a pleasure to have you here.
 
