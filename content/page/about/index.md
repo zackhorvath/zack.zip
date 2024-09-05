@@ -1,6 +1,6 @@
 ---
 title: About Me
-slug: "{{seoTitle}}"
+slug: "about"
 menu:
     main:
         weight: 2
@@ -20,12 +20,8 @@ When I'm not at work, I'm a maker who is passionate about combining the highly t
 
 My hope is that if you're reading this page, you're passionate about these things too. One of the most powerful tools we have at our disposal is our ability to learn from and teach one another, regardless of your skill level. I hope something you find here may be useful to one of your projects (tech or otherwise) - and if so, I'd love to hear about it!
 
-***
-
 ### About this site
 `zack.zip` serves as my public journal and blog of adventures in nerditude, and is brought to you by a server rack humming away in my garage - that's about as farm to table as it gets, baby!
-
-***
 
 ### Give me a shout
 I'm some variation of `@horvaticus` most places, so if you see me, feel free to reach out! I've got a link tree available on the [links page](https://zack.zip/links/). If you'd like to stalk me around the intenret feel free to check those out!

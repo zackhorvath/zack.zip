@@ -19,8 +19,7 @@
         {
           "title": "Slug",
           "name": "slug",
-          "type": "string",
-          "default": "{{seoTitle}}"
+          "type": "string"
         },
         {
           "title": "Publishing date",
