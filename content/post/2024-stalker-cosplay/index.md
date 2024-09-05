@@ -1,6 +1,6 @@
 ---
 title: STALKER @ PAX West 2024
-description: "Built for PAX West 2024"
+description: "In celebration of STALKER 2 finally releasing! Or, being close to release at least."
 slug: stalker-cosplay
 date: 2024-09-05T22:02:08.183Z
 image: cover.jpg
