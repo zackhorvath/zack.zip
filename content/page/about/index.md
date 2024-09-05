@@ -13,7 +13,7 @@ readingTime: false
 ## I'm Zack
 ...and welcome to my garage!
 
-![Image 1](zack-1.jpg) ![Image 2](zack-2.jpg)
+![Image 1](zack-1.jpg)
 
 By day I am a self-taught Staff-level DevOps Engineer who has an extremely deep background in various computer systems and programming langauges. Tech has always been my passion in life, and I've been lucky enough to be able to turn that into a career.
 
