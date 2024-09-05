@@ -2,7 +2,7 @@
 title: Links
 links:
   - title: Instagram
-    description: `@horvaticus` Cosplay photos & reels
+    description: "`@horvaticus` Cosplay photos & reels"
     website: https://www.instagram.com/horvaticus/
     image: https://www.vectorlogo.zone/logos/instagram/instagram-tile.svg
   - title: Threads
