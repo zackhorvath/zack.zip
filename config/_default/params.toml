@@ -19,7 +19,7 @@ subtitle = "3D Printing, Cosplay, Gaming, and Tech!"
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/zack.jpg"
+src = "img/avatar.jpg"
 
 [article]
 headingAnchor = false
