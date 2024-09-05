@@ -19,7 +19,8 @@
         {
           "title": "Slug",
           "name": "slug",
-          "type": "string"
+          "type": "string",
+          "default": "{{seoTitle}}"
         },
         {
           "title": "Publishing date",
@@ -31,7 +32,8 @@
         {
           "title": "Image",
           "name": "image",
-          "type": "image"
+          "type": "image",
+          "default": "cover.jpg"
         },
         {
           "title": "Is in draft",
