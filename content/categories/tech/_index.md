@@ -1,10 +1,10 @@
 ---
 title: Tech
 description: Talking about the day job
-image:
+image: containers.jpg
 
 # Badge style
 style:
-    background: "#2a9d8f"
+    background: "#326CE5"
     color: "#fff"
 ---
