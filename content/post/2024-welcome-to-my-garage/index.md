@@ -4,7 +4,8 @@ description: First post!
 slug: garage
 date: 2024-09-05T07:13:42.807Z
 image: cover.jpg
-tags: []
+tags:
+    - web
 categories:
     - tech
 ---
