@@ -1,7 +1,7 @@
 ---
 title: Welcome to the Garage
 description: First post!
-slug: "welcome-to-the-garage"
+slug: garage
 date: 2024-09-05T07:13:42.807Z
 image: cover.jpg
 tags: []
