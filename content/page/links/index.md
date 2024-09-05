@@ -4,7 +4,7 @@ links:
   - title: Instagram
     description: "`@horvaticus` Cosplay photos & reels"
     website: https://www.instagram.com/horvaticus/
-    image: https://www.vectorlogo.zone/logos/instagram/instagram-tile.svg
+    image: https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg
   - title: Threads
     description: "Mostly cosplay discussion"
     website: https://www.threads.net/@horvaticus
@@ -12,7 +12,7 @@ links:
   - title: BlueSky
     description: "horvaticus@zack.zip"
     website: https://bsky.app/profile/zack.zip
-    image: https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/bluesky.svg
+    image: https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg
   - title: X
     description: "@horvaticus"
     website: https://x.com/horvaticus
