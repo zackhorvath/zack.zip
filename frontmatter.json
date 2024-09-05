@@ -17,6 +17,11 @@
           "type": "string"
         },
         {
+          "title": "Slug",
+          "name": "slug",
+          "type": "string"
+        },
+        {
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",
@@ -24,8 +29,8 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "preview",
+          "title": "Image",
+          "name": "image",
           "type": "image"
         },
         {
