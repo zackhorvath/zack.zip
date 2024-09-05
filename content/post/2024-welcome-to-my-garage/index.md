@@ -12,7 +12,7 @@ categories:
 ## First!
 Hey there,
 
-This post serves as the quintessential "first!" post on any blog to make sure that the wiring is all glued together properly. I'm super excited to have a place to be able to write long-form content, such as guides and walkthroughs, that aren't appropriate for other platforms.
+This post serves as the quintessential "first!" post on any blog to make sure that the wiring is all glued together properly. I'm super excited to have a place to be able to write long-form content, such as guides and walkthroughs which aren't appropriate for other platforms.
 
 ## Facts for Nerds
 This blog was built with [Hugo](https://gohugo.io/) and a customized [Stack](https://stack.jimmycai.com/) theme; the beauty of this combination is that the entirity of this website is actually static! There's no databases, nor crazy hosting setups.
