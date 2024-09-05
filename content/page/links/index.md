@@ -8,7 +8,7 @@ links:
   - title: Threads
     description: "Mostly cosplay discussion"
     website: https://www.threads.net/@horvaticus
-    image: https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/threads.svg
+    image: https://raw.githubusercontent.com/Automattic/jetpack/trunk/projects/js-packages/social-logos/src/svg/threads.svg
   - title: BlueSky
     description: "horvaticus@zack.zip"
     website: https://bsky.app/profile/zack.zip
