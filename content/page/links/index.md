@@ -2,23 +2,23 @@
 title: Links
 links:
   - title: Instagram
-    description: "`@horvaticus` Cosplay photos & reels"
+    description: "Mostly Cosplay Photos, Reels, and Tags"
     website: https://www.instagram.com/horvaticus/
     image: https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg
   - title: Threads
-    description: "Mostly cosplay discussion"
+    description: "Cosplay Discussion"
     website: https://www.threads.net/@horvaticus
     image: https://raw.githubusercontent.com/Automattic/jetpack/trunk/projects/js-packages/social-logos/src/svg/threads.svg
   - title: BlueSky
-    description: "horvaticus@zack.zip"
+    description: "The up-and-coming Twitter replacement"
     website: https://bsky.app/profile/zack.zip
     image: https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg
   - title: X
-    description: "@horvaticus"
+    description: ("Formerly Known as Twitter")
     website: https://x.com/horvaticus
     image: https://www.vectorlogo.zone/logos/x/x-icon.svg
   - title: Printables
-    description: Check out my makes & models on Printables!
+    description: I post most of my makes and models to Printables!
     website: https://www.printables.com/@horvaticus
     image: https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/printables.svg
   - title: MakerWorld

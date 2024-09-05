@@ -26,11 +26,12 @@ My hope is that if you're reading this page, you're passionate about these thing
 ### Give me a shout
 I'm some variation of `@horvaticus` most places, so if you see me, feel free to reach out! I've got a link tree available on the [links page](https://zack.zip/links/). If you'd like to stalk me around the intenret feel free to check those out!
 
-### FAQ
-I get asked these from time to time:
+### Frequently Asked FAQs
 #### Do you do commissions?
-Not yet, I am still exploring how to best offer 3D printing and scanning services at this time.
-#### Why do you upload to both Printables & MakerWorld?
+Kinda? I am still exploring how to best offer 3D printing and scanning services at this time.
+#### Printables or MakerWorld? Why do you post to both?
 Because I think it's lame when games get published to one storefront over the other, and feel the same about STL files. Creators get rewarded for total downloads and boosts for published models, but, it's more important to me that you have a choice in where you download your files from.
-#### Do you own the license to the items you print?
-In some cases yes, as these are purchased (with appropriate license), open sourced, or are original designs. In cases where I do not own the copyright (but am allowed to print or remix a model for personal use) I believe in making the best possible effort to give the original author a shout out! It's good digital karma.
+#### How do you handle intellectual property and licensing with comissions?
+I strictly follow the original license of any intellectual property I use in my costumes. In some cases, the designs are original, open sourced, or I have purchased a commercial license. In others, I am often using a community personal use license. I do not directly profit off of my props, I do it for fun, for me.
+
+I believe in making the best possible effort to give the original author a shout out too! It's good digital karma and keeps the creative process spinning.
