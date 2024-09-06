@@ -168,9 +168,4 @@ All in, the total build time was around 130 hours, not including printing. Not t
 
 ![After Ditching the Pouch](image-14.png)
 
-![I forgot what game this was with, but I dig the vibe](image-17.png)
-
-
-Anyways, thanks for reading! STALKER is one of my favorite franchises and I am absolutely stoked to have gotten the chance to pretend to be one for a weekend.
-
-Zack
+Anyways, thanks for reading! Good hunting, Stalkers.
