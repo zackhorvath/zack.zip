@@ -59,11 +59,10 @@ Apart from the fabrics, there was exactly one objective I had when designing thi
 > I will eventually get around to full build logs of each of these props for those of you interested in making your own!
 
 #### Echo Detector
-![You](image-14.png) ![The guy she told you not to worry about](image-12.png)
+![Reference](image-14.png)
+![Detector Internals](image-15.png) ![Completed Detector](image-12.png)
 
 This thing was an absolute blast to work on. In the video game this little device helps the player detect anomalies in their search of artifacts. How this prop works though is there is an Arduino inside which runs a program that produces a flash and a beep based on local Bluetooth Low Energy signals.
-
-<video controls src="PXL_20240901_010438665.mp4" title="Detector in Action!"></video>
 
 The end result was an interactive prop that I was able to comb the convention floor with! It was a real head turner and conversation starter!
 
@@ -72,6 +71,7 @@ Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-e
 I ended up having to refactor a part of the code to work with the latest versions of the API used by the script; I will be releasing this fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention.
 
 #### Compass Artifact
+{{< instagram C_CKh1kvfvA >}}
 
 #### Item 62 Gauss Rifle
 
