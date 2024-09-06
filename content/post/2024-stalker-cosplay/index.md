@@ -164,8 +164,10 @@ There was some off the shelf gear I tossed into this build as well:
 ## Ready for the Zone!
 ![First Day at PAX West](image-2.webp) ![The only "straight on" shot I managed to get, aviators for effect!](image-6.webp) 
 
+![I forgot what game this was with, but I dig the vibe](image-17.png)
+
 All in, the total build time was around 130 hours, not including printing. Not too shabby! Some corners definitely had to be cut (like, not having a Sunrise Suit, or skipping the "copper coils" on the Gauss Rifle), but, I highly anticipate this costume will come back out after Stalker 2 gets released!
 
-![After Ditching the Pouch](image-14.png)
+![Onwards to the next adventure](image-14.png)
 
-Anyways, thanks for reading! Good hunting, Stalkers.
+Good Hunting, Stalker.
