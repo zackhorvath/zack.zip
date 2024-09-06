@@ -17,7 +17,7 @@ I had a blast making this costume; it wasn't the most technical project, but it 
 
 I plan on doing individual logs about the kit props and their creation process. I'm in the process of editing the build videos since everything came together kind of last minute, but I didn't want to hold off on making this post!
 
-![](image.png)
+![A vaguely radioactive weekend!](image-2.png)
 
 ### What is "STALKER"?
 ![STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.webp)
@@ -45,6 +45,8 @@ I opted instead to base my build off of a Gorka (Горка) K2 combat suit, whi
 ![Faction Patches](image-16.webp)
 
 There are several factions in the Zone, and I rotated between repping the Loners, Freedom, and the Monolith (glory to the rock). I ended up running into some other Loners and some Mercenaries at PAX.
+
+![Never trust a merc...](image-1.png)
 
 ***
 ### The Battle Rig
