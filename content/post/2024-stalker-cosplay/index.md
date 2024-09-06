@@ -91,9 +91,6 @@ The Compass was a real head turner, however one of the crystals broke off during
 
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
 
-Here's a short build reel:
-{{< instagram C_CKh1kvfvA >}}
-
 #### Item 62 Gauss Rifle
 
 
@@ -118,7 +115,3 @@ There was some off the shelf gear I tossed into this build as well:
 
 ## Ready for the Zone
 ![First Day at PAX West](image-2.png) ![The only "straight on" shot I managed to get, whoops!](image-6.png)
-
-### The Loadout
-![A Stalker's Kit](image-5.png)
-My favorite part of this costume was putting the props together.
