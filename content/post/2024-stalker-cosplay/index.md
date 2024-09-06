@@ -32,7 +32,7 @@ I also got to shoot with the GSC crew at the STALKER 2 booth! I had a really har
 
 ![The classic look of pure unadulterated satisfaction](GWjndYIWwAAfzq2.webp)
 
-___
+***
 ## Concept & Design
 Coming right off another big project, I decided that my time would be better spent focusing on prop making versus fabric projects. This meant that the "Sunrise Suit" that's common with other STALKER cosplayers was off the table for me.
 
@@ -82,7 +82,7 @@ For the decals, I was able to use Google Gemini to take the screenshot from the 
 Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-echo-detector-printable-model) for creating such an awesome model, providing the inspiration for the Arduino code, and the internals so I could reverse engineer and build my own.
 
 In a later post I will be releasing the code fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention. I also needed to modify the mesh of the detector to fit my switches and LEDs - those will go to a remix on Printables.
-
+***
 #### Compass Artifact
 ![The Compass Artifact](image-18.webp) ![In-Game](image-17.webp)
 
@@ -94,7 +94,7 @@ The Compass was a real head turner, however one of the crystals broke off during
 
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
 
-
+***
 #### Item 62 Gauss Rifle
 ![Gauss Rifle Reference Image](image-19.webp)
 
@@ -102,14 +102,16 @@ Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) 
 
 Of all the props I've done for any costume, this is one of my favorites. First off, 
 
-
+***
 #### Cossacks Vodka
 ![Decals Cut...](image-22.webp)![Decals Applied!](image-23.webp)
 
 Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of the game. I wanted to test drive the waterslide decals before putting them on anything I couldn't scrub. Luckily I only needed one test drive and the "bad" one looked pretty good!
 
+***
 #### Snork Trophy
 
+***
 #### Off the Shelf Gear
 ![fgsfds](image-21.webp)
 
@@ -120,6 +122,6 @@ There was some off the shelf gear I tossed into this build as well:
 * Mira Drop-Leg Gas Mask Pouch
 * Sordin Pro-X Neckband EarPro
 
-
+***
 ## Ready for the Zone
 ![First Day at PAX West](image-2.webp) ![The only "straight on" shot I managed to get, whoops!](image-6.webp)
