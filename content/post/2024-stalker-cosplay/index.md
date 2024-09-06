@@ -146,6 +146,8 @@ Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of 
 
 At the end of the evening I ended up using them as water bottles... which of course got a few funny looks. Yep, definitely filled with water.
 
+![Get this to Cardan, stat!](s_t_a_l_k_e_r__cossacks_vodka_label_by_drjorus_ddgkqrp.png)
+
 #### Snork Trophy
 ![Sn0rk](image-11.png)
 
