@@ -38,6 +38,10 @@ Coming right off another big project, I decided that my time would be better spe
 
 I opted instead to base my build off of a Gorka (Горка) K2 combat suit, which I had recently acquired for... unrelated purposes. This offered a good base to accessorize on top of. The nice part about STALKER cosplays is that there's no specific character you have to kit up as, so, I let my gut guide me on that. I wanted to build a STALKER that would embody how I imagined my character, myself, in the Zone.
 
+![Faction Patches](image-16.png)
+
+There are several factions in the Zone, and I rotated between repping the Loners, Freedom, and the Monolith (glory to the rock). I ended up running into some other Loners and some Mercenaries at PAX.
+
 ### The Battle Rig
 In an attempt to stick with the Soviet-surplus '90s vibe of the gear, I actually attempted to get a SMERSH (СМЕРЧ) rig to build the rest of my costume off of. 
 
@@ -66,18 +70,36 @@ This thing was an absolute blast to work on. In the video game this little devic
 
 The end result was an interactive prop that I was able to comb the convention floor with! It was a real head turner and conversation starter!
 
-Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-echo-detector-printable-model) for creating such an awesome model, providing the groundwork for the Arduino code, and giving a screenshot of the internals so I could reverse engineer and build my own.
+For the decals, I was able to use Google Gemini to take the screenshot from the game and export to text (and translation into Ukrainian), which I then used in combination with GIMP and Inkscape to create my own custom decals. Those were then printed on waterslide sheets.
 
-I ended up having to refactor a part of the code to work with the latest versions of the API used by the script; I will be releasing this fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention.
+![GIMP to the Rescue!](<Screenshot 2024-08-26 092050.png>)
+
+Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-echo-detector-printable-model) for creating such an awesome model, providing the inspiration for the Arduino code, and the internals so I could reverse engineer and build my own.
+
+In a later post I will be releasing the code fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention. I also needed to modify the mesh of the detector to fit my switches and LEDs - those will go to a remix on Printables.
 
 #### Compass Artifact
+![The Compass Artifact](image-18.png)
+![In-Game](image-17.png)
+The Compass is a rare artifact that is able to locate gaps in anomaly fields.
+
+This was printed in several pieces - two domes that screwed together, an internal carriage system for holding the electronics, and then a bunch of crystalline pieces that thread into the domes (which I printed on my resin printer for a clear effect).
+
+The Compass was a real head turner, however one of the crystals broke off during handling. I actually printed off spare crystals before the convention, but, I think more than two props is too many, and I found myself juggling on Day 1, so I ended up rotating between it and the Echo Detector.
+
+Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
+
+Here's a short build reel:
 {{< instagram C_CKh1kvfvA >}}
 
 #### Item 62 Gauss Rifle
+![Gauss Rifle In-Game](image-19.png)
+
+#### Cossacks Vodka
 
 #### Snork Trophy
 
-## Construction
+## Construction Montage
 
 ## Finishing Touches
 
