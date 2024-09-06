@@ -17,7 +17,7 @@ I had a blast making this costume; it wasn't the most technical project, but it 
 
 I plan on doing individual logs about the kit props and their creation process. I'm in the process of editing the build videos since everything came together kind of last minute, but I didn't want to hold off on making this post!
 
-![Low and Ready](image.png)
+![](image.png)
 
 ### What is "STALKER"?
 ![STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.webp)
