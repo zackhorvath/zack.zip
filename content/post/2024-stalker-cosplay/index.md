@@ -76,7 +76,6 @@ Apart from the fabrics, there was exactly one objective I had when designing thi
 
 ![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>) ![Reference](image-6.png)
 
-
 Ok - first and foremost this is what I am most proud of for this entire cosplay. I made a 1:1 replica of the Gauss Rifle from the STALKER series, using the original game files. I jury-rigged a Blender plugin for the X-Ray engine to export the game files in a mesh format that I was able to import into Fusion 360.
 
 Once inside Fusion 360, I attempted to convert the model into a solid; which yielded a spotty mess of surfaces that all had to be painstakingly stitched together to create solids. Once I had the whole gun file solidified, I then proceeded to make some adjustments to the prop geometry. These changes included:
@@ -94,6 +93,8 @@ Once inside Fusion 360, I attempted to convert the model into a solid; which yie
 After all that was done, I decided to just purchase a SUSAT scope clone, since it'd get kind of complicated printing that out and I was getting short on time. Though I kind of threw money at the problem, I was actually able to cobble together a Picatinny/Weaver rail mod to permanently attach to the top of the Gauss Gun. The end result is that I can actually remove the SUSAT scope as a party trick!
 
 ![360 No Scope](image-7.png) ![Modifying a Ruger 10/22 Rail](image-9.png)
+
+![Magazine warning label I whipped up](image-18.png)
 
 After milling out the holes in the aluminum rail, I secured it to the print with 3" long drywall screws via pre-drilled holes that were soaked in epoxy. 
 
