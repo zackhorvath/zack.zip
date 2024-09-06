@@ -12,7 +12,10 @@ tags:
 categories:
     - cosplay
 ---
-I had a blast making this costume; it wasn't the most technical project I've ever done, but it was really fulfilling on a personal level and got to bring one of my characters to life.
+## Intro
+I had a blast making this costume; it wasn't the most technical project, but it was really fulfilling on a personal level and got to bring one of my characters to life.
+
+This is my first "content" post, so I am not sure how to structure things moving forward, but I plan on doing individual posts about the props and their creation process, and then a post for how everything came together (which is this).
 
 ### What is "STALKER"?
 ![Stalker Call of Pripyat Promotional Art](image.png)
@@ -23,8 +26,13 @@ Basically, it's a game about being a post-apocalyptic treasure hunter in a radio
 
 Fast forward to today, and I'm about to get my fix back on - STALKER 2 is almost here! After playing the demo at PAX West, I think it's safe to say that the wait will be worth it.
 
-### Entering the Zone
-![First Day at PAX West](image-2.png) ![With Detector On](image-3.png)
+I also got to shoot with the GSC crew at the STALKER 2 booth!
+
+![The classic look of pure unadulterated satisfaction](GWjndYIWwAAfzq2.jpg)
+
+## Entering the Zone
+![First Day at PAX West](image-2.png)
+
 
 #### The Loadout
 ![A Stalker's Kit](image-5.png)
