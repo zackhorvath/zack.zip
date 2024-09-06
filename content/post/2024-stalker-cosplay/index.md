@@ -32,6 +32,7 @@ I also got to shoot with the GSC crew at the STALKER 2 booth! I had a really har
 
 ![The classic look of pure unadulterated satisfaction](GWjndYIWwAAfzq2.webp)
 
+___
 ## Concept & Design
 Coming right off another big project, I decided that my time would be better spent focusing on prop making versus fabric projects. This meant that the "Sunrise Suit" that's common with other STALKER cosplayers was off the table for me.
 
