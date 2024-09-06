@@ -49,7 +49,7 @@ There are several factions in the Zone, and I rotated between repping the Loners
 ![Never trust a merc...](image-1.png)
 
 ***
-### The Battle Rig
+### Battle Rigging
 In an attempt to stick with the Soviet-surplus '90s vibe of the gear, I actually attempted to get a SMERSH (СМЕРЧ) rig to build the rest of my costume off of. 
 
 ![SMERSH](image-9.webp)
@@ -65,7 +65,7 @@ The other mod I ended up needing to do was ripping out the girth straps around t
 I also think the camo ended up working out pretty well, and did a good job being distinct from my two-tone green suit.
 
 ***
-### The Kit
+### Full Kit
 ![A Stalker is always prepared...](image-20.webp)
 
 Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
