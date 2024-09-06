@@ -15,7 +15,7 @@ categories:
 ## Intro
 I had a blast making this costume; it wasn't the most technical project, but it was really fulfilling on a personal level and got to bring one of my characters to life.
 
-This is my first "content" post, so I am not sure how to structure things moving forward, but I plan on doing individual posts about the props and their creation process, and then a post for how everything came together (which is this).
+I plan on doing individual logs about the kit props and their creation process. I'm in the process of editing the build videos since everything came together kind of last minute, but I didn't want to hold off on making this post!
 
 ### What is "STALKER"?
 ![STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.png)
@@ -56,12 +56,20 @@ I also think the camo ended up working out pretty well, and did a good job being
 ### The Kit
 Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
 
-#### "Echo" Detector
-![You](image-14.png) [The guy she told you not to worry about](image-12.png)
+> I will eventually get around to full build logs of each of these props for those of you interested in making your own!
 
-This thing was so such a blast to work on. 
+#### Echo Detector
+![You](image-14.png) ![The guy she told you not to worry about](image-12.png)
+
+This thing was an absolute blast to work on. In the video game this little device helps the player detect anomalies in their search of artifacts. How this prop works though is there is an Arduino inside which runs a program that produces a flash and a beep based on local Bluetooth Low Energy signals.
+
+<video controls src="PXL_20240901_010438665.mp4" title="Detector in Action!"></video>
+
+The end result was an interactive prop that I was able to comb the convention floor with! It was a real head turner and conversation starter!
 
 Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-echo-detector-printable-model) for creating such an awesome model, providing the groundwork for the Arduino code, and giving a screenshot of the internals so I could reverse engineer and build my own.
+
+I ended up having to refactor a part of the code to work with the latest versions of the API used by the script; I will be releasing this fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention.
 
 #### Compass Artifact
 
