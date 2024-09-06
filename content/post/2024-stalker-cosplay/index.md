@@ -4,6 +4,7 @@ description: "In celebration of STALKER 2 finally releasing! Or, being close to 
 slug: stalker-cosplay
 date: 2024-09-05T22:02:08.183Z
 image: cover.jpg
+draft: true
 tags:
     - stalker
     - cosplay
