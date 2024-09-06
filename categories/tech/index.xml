@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Zack's Garage</title><link>https://zack.zip/categories/tech/</link><description>Recent content in Tech on Zack's Garage</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 05 Sep 2024 07:13:42 +0000</lastBuildDate><atom:link href="https://zack.zip/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to the Garage</title><link>https://zack.zip/p/garage/</link><pubDate>Thu, 05 Sep 2024 07:13:42 +0000</pubDate><guid>https://zack.zip/p/garage/</guid><description>&lt;img src="https://zack.zip/p/garage/cover.jpg" alt="Featured image of post Welcome to the Garage" />&lt;h2 id="first">First!
+&lt;/h2>&lt;p>Hey there,&lt;/p>
+&lt;p>This post serves as the quintessential &amp;ldquo;first!&amp;rdquo; post on any blog to make sure that the wiring is all glued together properly. I&amp;rsquo;m super excited to have a place to be able to write long-form content, such as guides and walkthroughs which aren&amp;rsquo;t appropriate for other platforms.&lt;/p>
+&lt;h2 id="facts-for-nerds">Facts for Nerds
+&lt;/h2>&lt;p>This blog was built with &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+>Hugo&lt;/a> and a customized &lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
+>Stack&lt;/a> theme; the beauty of this combination is that the entirity of this website is actually static! There&amp;rsquo;s no databases, nor crazy hosting setups.&lt;/p>
+&lt;h3 id="cms-less">CMS-less
+&lt;/h3>&lt;p>I paired it with &lt;a class="link" href="https://frontmatter.codes/" target="_blank" rel="noopener"
+>FrontMatter&lt;/a> to give me a headless content management system that runs directly out of Visual Studio Code too.&lt;/p>
+&lt;h3 id="rss-compatible">RSS Compatible?
+&lt;/h3>&lt;p>Yep - the theme I built around exports the &lt;a class="link" href="https://stack.jimmycai.com/config/site#rssfullcontent" target="_blank" rel="noopener"
+>full page content&lt;/a> in RSS. So it theory it should be compatible with the RSS readers other geriatric millenials are using!&lt;/p></description></item></channel></rss>
