@@ -15,6 +15,6 @@ categories:
 
 
 ### Intro
-{{< figure src="stalker-bg.png" title="A trip into the zone"> }}
+{{< figure src="stalker-bg.png" title="A trip into the zone" >}}
 
 Kickin' off some real content in here with a post about by my latest #cosplay, my Stalker from the [STALKER game series](https://en.wikipedia.org/wiki/S.T.A.L.K.E.R.).![alt text](image.png)
