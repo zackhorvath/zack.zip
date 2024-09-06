@@ -30,6 +30,8 @@ Fast forward to today, and I'm about to get my fix back on - STALKER 2 is almost
 
 I also got to shoot with the GSC crew at the STALKER 2 booth! I had a really hard time not completely fanboying it up!
 
+![It's finally here!!](image-16.png)
+
 ![The classic look of pure unadulterated satisfaction](GWjndYIWwAAfzq2.webp)
 
 ***
@@ -69,6 +71,39 @@ I also think the camo ended up working out pretty well, and did a good job being
 Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
 
 ***
+### Gauss Rifle (Item 62)
+![Completed Gauss Rifle](image-5.png) ![Offhand Side](image-4.png) ![Through the Jungle](IMG_20240905_205655_468.jpg)
+
+![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>) ![Reference](image-6.png)
+
+
+Ok - first and foremost this is what I am most proud of for this entire cosplay. I made a 1:1 replica of the Gauss Rifle from the STALKER series, using the original game files. I jury-rigged a Blender plugin for the X-Ray engine to export the game files in a mesh format that I was able to import into Fusion 360.
+
+Once inside Fusion 360, I attempted to convert the model into a solid; which yielded a spotty mess of surfaces that all had to be painstakingly stitched together to create solids. Once I had the whole gun file solidified, I then proceeded to make some adjustments to the prop geometry. These changes included:
+* completely solidifying the whole gun, including normalization of each individual fin segment so they all match
+* adjustment of the stock to be closer to an IRL G36 stock (so you can actually shoulder it)
+* completely remodeling the front sight
+* decoupling the SUSAT scope from the base model
+* rebuilding the handguard so it now attaches to the receiver
+* modeling dowel holes through the entirety of the print
+* opened the wiring holes so I could use 4.5mm OD wire as a practical effect
+* created magnet mounts for the magazines to attach to the receiver
+* logically cut up the print for best printing performance
+* lastly, removed the trigger from the trigger group... because those always get broken and it's important to be able to glue them back on!
+
+After all that was done, I decided to just purchase a SUSAT scope clone, since it'd get kind of complicated printing that out and I was getting short on time. Though I kind of threw money at the problem, I was actually able to cobble together a Picatinny/Weaver rail mod to permanently attach to the top of the Gauss Gun. The end result is that I can actually remove the SUSAT scope as a party trick!
+
+![360 No Scope](image-7.png) ![Modifying a Ruger 10/22 Rail](image-9.png)
+
+After milling out the holes in the aluminum rail, I secured it to the print with 3" long drywall screws via pre-drilled holes that were soaked in epoxy. 
+
+![Side Profile](image-10.png)
+
+All in all it held up very well all weekend, except for the trigger breaking. Nothing superglue can't fix. If I could change one thing, I would use a different adhesive other than superglue for attaching the wires, since CA glue appears to not adhere to silicone wires very well. Had to keep re-attaching those.
+
+Full build log to follow.
+
+***
 ### Echo Detector
 ![Completed Detector](image-12.webp)
 
@@ -98,23 +133,22 @@ The Compass was a real head turner, however one of the crystals broke off during
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
 
 ***
-### Gauss Rifle (Item 62)
-![Completed Gauss Rifle](image-5.png) ![Offhand Side](image-4.png) 
-
-![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>) ![Reference](image-6.png)
-
-
-Ok - first and foremost this is what I am most proud of for this entire cosplay. I made a 1:1 replica of the Gauss Rifle from the STALKER series, using the original game files. I jury-rigged a Blender plugin for the X-Ray engine to export the game files in a mesh format that I was able to import into Fusion 360. From there I painstakingly
-
-
-
-***
 ### Misc. Items
+Sometimes you get spare time in between projects drying or printing, so these are some extras I cranked out!
+
 #### Cossacks Vodka
 ![Decals Cut...](image-22.webp)![Decals Applied!](image-23.webp)
 
 Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of the game. I wanted to test drive the waterslide decals before putting them on anything I couldn't scrub. Luckily I only needed one test drive and the "bad" one looked pretty good!
+
+At the end of the evening I ended up using them as water bottles... which of course got a few funny looks. Yep, definitely filled with water.
+
 #### Snork Trophy
+![Sn0rk](image-11.png)
+
+The Snork is a classic enemy in the Stalker series. I created a quick trophy by beating the absolute shit out of a Soviet PDF-D gas mask, and then slathering it in red, brown, and black paint.
+
+What I didn't realize is that the lenses are real glass, so, after getting glass everywhere I ended up using liquid UV resin to coat the glass so my dumbass doesn't cut myself on it.
 
 #### Off the Shelf Gear
 ![fgsfds](image-21.webp)
@@ -127,5 +161,13 @@ There was some off the shelf gear I tossed into this build as well:
 * Sordin Pro-X Neckband EarPro
 
 ***
-## Ready for the Zone
-![First Day at PAX West](image-2.webp) ![The only "straight on" shot I managed to get, whoops!](image-6.webp)
+## Ready for the Zone!
+![First Day at PAX West](image-2.webp) ![The only "straight on" shot I managed to get, aviators for effect!](image-6.webp) 
+
+All in, the total build time was around 130 hours, not including printing. Not too shabby! Some corners definitely had to be cut (like, not having a Sunrise Suit, or skipping the "copper coils" on the Gauss Rifle), but, I highly anticipate this costume will come back out after Stalker 2 gets released!
+
+![After Ditching the Pouch](image-14.png)
+
+Anyways, thanks for reading! STALKER is one of my favorite franchises and I am absolutely stoked to have gotten the chance to pretend to be one for a weekend.
+
+Zack
