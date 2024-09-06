@@ -27,7 +27,7 @@ Basically, it's a game about being a post-apocalyptic treasure hunter in a radio
 
 Fast forward to today, and I'm about to get my fix back on - STALKER 2 is almost here! After playing the demo at PAX West, I think it's safe to say that the wait will be worth it.
 
-I also got to shoot with the GSC crew at the STALKER 2 booth!
+I also got to shoot with the GSC crew at the STALKER 2 booth! I had a really hard time not completely fanboying it up!
 
 ![The classic look of pure unadulterated satisfaction](GWjndYIWwAAfzq2.jpg)
 
