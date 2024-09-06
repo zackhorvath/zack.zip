@@ -18,8 +18,7 @@ I had a blast making this costume; it wasn't the most technical project, but it 
 I plan on doing individual logs about the kit props and their creation process. I'm in the process of editing the build videos since everything came together kind of last minute, but I didn't want to hold off on making this post!
 
 ### What is "STALKER"?
-{{ $image := .Resources.Get "image.png" }}
-[STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.png)
+![STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.png)
 > The name "S.T.A.L.K.E.R." is a backronym for Scavengers, Trespassers, Adventurers, Loners, Killers, Explorers and Robbers.
 
 Apart from a really bad hashtag to try and use, [STALKER](https://en.wikipedia.org/wiki/S.T.A.L.K.E.R.) is a first-person shooter survival horror RPG that was first released in 2007 for PC.
@@ -67,6 +66,7 @@ Apart from the fabrics, there was exactly one objective I had when designing thi
 
 #### Echo Detector
 ![Reference](image-14.png)
+
 ![Detector Internals](image-15.png) ![Completed Detector](image-12.png)
 
 This thing was an absolute blast to work on. In the video game this little device helps the player detect anomalies in their search of artifacts. How this prop works though is there is an Arduino inside which runs a program that produces a flash and a beep based on local Bluetooth Low Energy signals.
@@ -82,8 +82,8 @@ Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-e
 In a later post I will be releasing the code fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention. I also needed to modify the mesh of the detector to fit my switches and LEDs - those will go to a remix on Printables.
 
 #### Compass Artifact
-![The Compass Artifact](image-18.png)
-![In-Game](image-17.png)
+![The Compass Artifact](image-18.png) ![In-Game](image-17.png)
+
 The Compass is a rare artifact that is able to locate gaps in anomaly fields.
 
 This was printed in several pieces - two domes that screwed together, an internal carriage system for holding the electronics, and then a bunch of crystalline pieces that thread into the domes (which I printed on my resin printer for a clear effect).
@@ -91,6 +91,7 @@ This was printed in several pieces - two domes that screwed together, an interna
 The Compass was a real head turner, however one of the crystals broke off during handling. I actually printed off spare crystals before the convention, but, I think more than two props is too many, and I found myself juggling on Day 1, so I ended up rotating between it and the Echo Detector.
 
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
+
 
 #### Item 62 Gauss Rifle
 
@@ -106,6 +107,7 @@ Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of 
 
 #### Off the Shelf Gear
 ![fgsfds](image-21.png)
+
 There was some off the shelf gear I tossed into this build as well:
 * [The surprisingly popular fake cigarette](https://amzn.to/3z88O1o)
 * Oakley Combat Boots
