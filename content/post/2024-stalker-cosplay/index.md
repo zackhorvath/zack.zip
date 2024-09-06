@@ -100,26 +100,27 @@ The Compass was a real head turner, however one of the crystals broke off during
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
 
 ***
-### The Gauss Rifle "Item 62"
+### Gauss Rifle (Item 62)
 ![Completed Gauss Rifle](image-5.png) ![Offhand Side](image-4.png) 
 
-![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>)
+![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>) ![Reference](image-6.png)
+
 
 
 
 Of all the props I've done for any costume, this is one of my favorites. First off, 
 
+
+
 ***
+### Misc. Items
 #### Cossacks Vodka
 ![Decals Cut...](image-22.webp)![Decals Applied!](image-23.webp)
 
 Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of the game. I wanted to test drive the waterslide decals before putting them on anything I couldn't scrub. Luckily I only needed one test drive and the "bad" one looked pretty good!
+#### Snork Trophy
 
-***
-### Snork Trophy
-
-***
-### Off the Shelf Gear
+#### Off the Shelf Gear
 ![fgsfds](image-21.webp)
 
 There was some off the shelf gear I tossed into this build as well:
