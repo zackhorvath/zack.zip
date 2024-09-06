@@ -25,3 +25,7 @@ Fast forward to today, and I'm about to get my fix back on - STALKER 2 is almost
 
 ### Entering the Zone
 ![First Day at PAX West](image-2.png) ![With Detector On](image-3.png)
+
+#### The Loadout
+![A Stalker's Kit](image-5.png)
+My favorite part of this costume was putting the props together.
