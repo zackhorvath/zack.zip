@@ -10,13 +10,9 @@ links:
     website: https://www.threads.net/@horvaticus
     image: https://raw.githubusercontent.com/Automattic/jetpack/trunk/projects/js-packages/social-logos/src/svg/threads.svg
   - title: BlueSky
-    description: "The up-and-coming Twitter replacement"
+    description: "Eager to see where this goes!"
     website: https://bsky.app/profile/zack.zip
     image: https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg
-  - title: X
-    description: ("Formerly Known as Twitter")
-    website: https://x.com/horvaticus
-    image: https://www.vectorlogo.zone/logos/x/x-icon.svg
   - title: Printables
     description: I post most of my makes and models to Printables!
     website: https://www.printables.com/@horvaticus

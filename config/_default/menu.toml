@@ -32,14 +32,6 @@ url = "https://bsky.app/profile/zack.zip"
 icon = "brand-bluesky"
 
 
-[[social]]
-identifier = "4-shitter"
-name = "The website formerly known as Twitter"
-url = "https://x.com/horvaticus"
-
-[social.params]
-icon = "brand-twitter"
-
 # [[social]]
 # identifier = "tiktok"
 # name = "TikTok"
