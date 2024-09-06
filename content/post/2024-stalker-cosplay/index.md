@@ -18,7 +18,7 @@ I had a blast making this costume; it wasn't the most technical project, but it 
 I plan on doing individual logs about the kit props and their creation process. I'm in the process of editing the build videos since everything came together kind of last minute, but I didn't want to hold off on making this post!
 
 ### What is "STALKER"?
-![STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.png)
+[STALKER: Call of Pripyat, Promotional Art (©GSC Game World)](image.png)
 > The name "S.T.A.L.K.E.R." is a backronym for Scavengers, Trespassers, Adventurers, Loners, Killers, Explorers and Robbers.
 
 Apart from a really bad hashtag to try and use, [STALKER](https://en.wikipedia.org/wiki/S.T.A.L.K.E.R.) is a first-person shooter survival horror RPG that was first released in 2007 for PC.
