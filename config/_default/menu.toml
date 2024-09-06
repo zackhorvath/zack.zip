@@ -8,7 +8,7 @@
 #newtab = true
 
 [[social]]
-identifier = "1-instagram"
+identifier = "instagram"
 name = "Instagram"
 url = "https://www.instagram.com/horvaticus"
 
@@ -16,7 +16,7 @@ url = "https://www.instagram.com/horvaticus"
 icon = "brand-instagram"
 
 [[social]]
-identifier = "2-threads"
+identifier = "threads"
 name = "Threads"
 url = "https://www.threads.net/@horvaticus"
 
@@ -24,7 +24,7 @@ url = "https://www.threads.net/@horvaticus"
 icon = "brand-threads"
 
 [[social]]
-identifier = "3-bluesky"
+identifier = "bluesky"
 name = "BlueSky"
 url = "https://bsky.app/profile/zack.zip"
 
