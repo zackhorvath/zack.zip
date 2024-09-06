@@ -54,3 +54,10 @@ I believe in making the best possible effort to give the original author a shout
 
 #### Do you prefer Printables or MakerWorld? Why do you post to both?
 Because I think it's lame when games get published to one storefront over the other, and feel the same about STL files. Creators get rewarded for total downloads and boosts for published models, but, it's more important to me that you have a choice in where you download your files from. I think the bonuses you get from MakerWorld are better (especially since I run mostly Bambu Printers these days), but I appreciate every download, like, and subscribe no matter which storefront its through!
+
+#### Do you make commissions or affiliate bucks on this?
+I create for fun, not for profit - that's what a day job is for. However, I do get some kickbacks:
+
+I get rewards for each download, print, and review on any 3D model I publish on Printables or Makerworld. These are directly redeemed in the form of spare parts or filament that go back into cosplay. Effort often goes into making these, but I don't charge for files so I feel like it's a fair trade.
+
+Occasionally I will use an Amazon affiliate link for products directly on Amazon. I get jack shit from these, but a few cents here and there goes towards buying newbie cosplayers beers at the comic con afterparty. So, know it's going to a greater cause.
