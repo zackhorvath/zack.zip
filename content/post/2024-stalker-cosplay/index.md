@@ -66,12 +66,12 @@ I also think the camo ended up working out pretty well, and did a good job being
 
 ***
 ### The Kit
-Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
-
 ![A Stalker is always prepared...](image-20.webp)
 
+Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
+
 ***
-#### Echo Detector
+### Echo Detector
 ![Completed Detector](image-12.webp)
 
 ![Detector Internals](image-15.webp) ![Reference](image-14.webp)
@@ -88,7 +88,7 @@ Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-e
 
 In a later post I will be releasing the code fork, along with a parameter that will allow users to adjust the sensitivity, as there's a lot of interference in a convention. I also needed to modify the mesh of the detector to fit my switches and LEDs - those will go to a remix on Printables.
 ***
-#### Compass Artifact
+### Compass Artifact
 ![The Compass Artifact](image-18.webp) ![In-Game](image-17.webp)
 
 The Compass is a rare artifact that is able to locate gaps in anomaly fields.
@@ -100,7 +100,7 @@ The Compass was a real head turner, however one of the crystals broke off during
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
 
 ***
-#### Item 62 Gauss Rifle
+### Item 62 Gauss Rifle
 ![Gauss Rifle Reference Image](image-19.webp)
 
 ![Completed Gauss Rifle](image-25.webp)
@@ -114,10 +114,10 @@ Of all the props I've done for any costume, this is one of my favorites. First o
 Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of the game. I wanted to test drive the waterslide decals before putting them on anything I couldn't scrub. Luckily I only needed one test drive and the "bad" one looked pretty good!
 
 ***
-#### Snork Trophy
+### Snork Trophy
 
 ***
-#### Off the Shelf Gear
+### Off the Shelf Gear
 ![fgsfds](image-21.webp)
 
 There was some off the shelf gear I tossed into this build as well:
