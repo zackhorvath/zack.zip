@@ -100,10 +100,12 @@ The Compass was a real head turner, however one of the crystals broke off during
 Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) for the awesome model!
 
 ***
-### Item 62 Gauss Rifle
-![Gauss Rifle Reference Image](image-19.webp)
+### The Gauss Rifle "Item 62"
+![Completed Gauss Rifle](image-5.png) ![Offhand Side](image-4.png) 
 
-![Completed Gauss Rifle](image-25.webp)
+![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>)
+
+
 
 Of all the props I've done for any costume, this is one of my favorites. First off, 
 
