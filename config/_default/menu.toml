@@ -8,12 +8,37 @@
 #newtab = true
 
 [[social]]
-identifier = "instagram"
+identifier = "1-instagram"
 name = "Instagram"
 url = "https://www.instagram.com/horvaticus"
 
 [social.params]
 icon = "brand-instagram"
+
+[[social]]
+identifier = "2-threads"
+name = "Threads"
+url = "https://www.threads.net/@horvaticus"
+
+[social.params]
+icon = "brand-threads"
+
+[[social]]
+identifier = "3-bluesky"
+name = "BlueSky"
+url = "https://bsky.app/profile/zack.zip"
+
+[social.params]
+icon = "brand-bluesky"
+
+
+[[social]]
+identifier = "4-shitter"
+name = "The website formerly known as Twitter"
+url = "https://x.com/horvaticus"
+
+[social.params]
+icon = "brand-twitter"
 
 # [[social]]
 # identifier = "tiktok"
@@ -22,30 +47,6 @@ icon = "brand-instagram"
 
 # [social.params]
 # icon = "brand-tiktok"
-
-[[social]]
-identifier = "bluesky"
-name = "BlueSky"
-url = "https://bsky.app/profile/zack.zip"
-
-[social.params]
-icon = "brand-bluesky"
-
-[[social]]
-identifier = "threads"
-name = "Threads"
-url = "https://www.threads.net/@horvaticus"
-
-[social.params]
-icon = "brand-threads"
-
-[[social]]
-identifier = "xitter"
-name = "The website formerly known as Twitter"
-url = "https://x.com/horvaticus"
-
-[social.params]
-icon = "brand-twitter"
 
 # [[social]]
 # identifier = "twitch"
