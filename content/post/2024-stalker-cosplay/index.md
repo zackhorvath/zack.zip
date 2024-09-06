@@ -24,7 +24,7 @@ I had a blast making this costume; it wasn't the most technical project, but it 
 
 Apart from a really bad hashtag to try and use, [STALKER](https://en.wikipedia.org/wiki/S.T.A.L.K.E.R.) is a first-person shooter survival horror RPG that was first released in 2007 for PC.
 
-Basically, it's a game about being a post-apocalyptic treasure hunter in a radioative post-soviet wonderland. I ended up getting the game for my birthday circa 2007, and must have dumped a thousand hours into the STALKER trilogy through the following decade.
+Basically, it's a game about being a post-apocalyptic treasure hunter in a radioactive post-soviet wonderland. I ended up getting the game for my birthday circa 2007, and must have dumped a thousand hours into the STALKER trilogy through the following decade.
 
 Fast forward to today, and I'm about to get my fix back on - STALKER 2 is almost here! After playing the demo at PAX West, I think it's safe to say that the wait will be worth it.
 
@@ -44,7 +44,7 @@ I opted instead to base my build off of a Gorka (Горка) K2 combat suit, whi
 
 There are several factions in the Zone, and I rotated between repping the Loners, Freedom, and the Monolith (glory to the rock). I ended up running into some other Loners and some Mercenaries at PAX.
 
-![Never trust a merc...](image-1.png)
+![Never trust a 'Merc](image-1.png)
 
 ***
 ### Battle Rigging
@@ -56,7 +56,7 @@ Unfortunately, the American company I ordered through wasn't able to deliver on 
 
 ![After minor accessorizing](image-10.webp) ![Test drive](image-11.webp)
 
-This actually ended up working out because the knock-off model incorrectly has the stuff-sack on the upper back instead of the lower back - but this oversight allowed me to hook up a WWI German gas mask cannister. The original plan for this was to be an "anomaly" container with lights and a plexiglass window, but, I ran out of time. Perhaps a future improvement?
+This actually ended up working out because the knock-off model incorrectly has the stuff-sack on the upper back instead of the lower back - but this oversight allowed me to hook up a WWI German gas mask canister. The original plan for this was to be an "anomaly" container with lights and a plexiglass window, but, I ran out of time. Perhaps a future improvement?
 
 The other mod I ended up needing to do was ripping out the girth straps around the natural waist and lower hips. I'm, uh, less malnourished than whoever this was made for. I replaced the webbing with stuff 1" and 1.5" nylon from a US manufacturer, and replaced the plastic buckles with metal cobra buckles. A fate that will probably happen to the real SMERSH when it shows up.
 
@@ -104,9 +104,7 @@ Thanks to [@JakubKoci](https://www.printables.com/model/29537-compass-artifact) 
 ![Design WIP A](<Screenshot 2024-08-20 164817.png>) ![Design WIP B](<Screenshot 2024-08-22 105315.png>) ![Reference](image-6.png)
 
 
-
-
-Of all the props I've done for any costume, this is one of my favorites. First off, 
+Ok - first and foremost this is what I am most proud of for this entire cosplay. I made a 1:1 replica of the Gauss Rifle from the STALKER series, using the original game files. I jury-rigged a Blender plugin for the X-Ray engine to export the game files in a mesh format that I was able to import into Fusion 360. From there I painstakingly
 
 
 
