@@ -101,7 +101,9 @@ After milling out the holes in the aluminum rail, I secured it to the print with
 
 All in all it held up very well all weekend, except for the trigger breaking. Nothing superglue can't fix. If I could change one thing, I would use a different adhesive other than superglue for attaching the wires, since CA glue appears to not adhere to silicone wires very well. Had to keep re-attaching those.
 
-[The files are available for download here.](https://www.printables.com/model/998013-stalker-gauss-rifle)
+Want to make your own? The files are available at:
+- [MakerWorld](https://makerworld.com/en/models/625776#profileId-550226)
+- [Printables](https://www.printables.com/model/998013-stalker-gauss-rifle)
 
 ***
 ### Echo Detector
