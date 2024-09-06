@@ -36,26 +36,36 @@ Coming right off another big project, I decided that my time would be better spe
 
 ![The most iconic STALKER outfits](image-8.png)
 
-I opted instead to base my build off of a Gorka (Горка) K2 combat suit, which I had recently acquired for... unrelated purposes. This offered a good base to accessorize on top of.
+I opted instead to base my build off of a Gorka (Горка) K2 combat suit, which I had recently acquired for... unrelated purposes. This offered a good base to accessorize on top of. The nice part about STALKER cosplays is that there's no specific character you have to kit up as, so, I let my gut guide me on that. I wanted to build a STALKER that would embody how I imagined my character, myself, in the Zone.
 
 ### The Battle Rig
 In an attempt to stick with the Soviet-surplus '90s vibe of the gear, I actually attempted to get a SMERSH (СМЕРЧ) rig to build the rest of my costume off of. 
 
-![SMERSH](image-9.png).
+![SMERSH](image-9.png)
 
-Unfortunately, the American company I ordered through wasn't able to deliver on time, so I ended up going with an airsoft knock-off model.
+Unfortunately, the American company I ordered through wasn't able to deliver on time, so I ended up going with an airsoft knock-off model in kind of a weirdo dingy camo pattern called "Ruin".
 
-![After minor accessorizing](image-10.png)
+![After minor accessorizing](image-10.png) ![Test drive](image-11.png)
 
 This actually ended up working out because the knock-off model incorrectly has the stuff-sack on the upper back instead of the lower back - but this oversight allowed me to hook up a WWI German gas mask cannister. The original plan for this was to be an "anomaly" container with lights and a plexiglass window, but, I ran out of time. Perhaps a future improvement?
 
-### The Rest of the Kit
+The other mod I ended up needing to do was ripping out the girth straps around the natural waist and lower hips. I'm, uh, less malnourished than whoever this was made for. I replaced the webbing with stuff 1" and 1.5" nylon from a US manufacturer, and replaced the plastic buckles with metal cobra buckles. A fate that will probably happen to the real SMERSH when it shows up.
+
+I also think the camo ended up working out pretty well, and did a good job being distinct from my two-tone green suit.
+
+### The Kit
+Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
 
 #### "Echo" Detector
+![You](image-14.png) [The guy she told you not to worry about](image-12.png)
+
+This thing was so such a blast to work on. 
+
+Huge shout out to [DoctorZer0](https://www.printables.com/model/823279-stalker-echo-detector-printable-model) for creating such an awesome model, providing the groundwork for the Arduino code, and giving a screenshot of the internals so I could reverse engineer and build my own.
 
 #### Compass Artifact
 
-#### Gauss Gun
+#### Item 62 Gauss Rifle
 
 #### Snork Trophy
 
