@@ -101,18 +101,8 @@ Here's a short build reel:
 
 #### Cossacks Vodka
 ![Decals Cut...](image-22.png)![Decals Applied!](image-23.png)
-A suprisingly easy addition to the kit, these were a big hit when converted into water bottles later on in the evening!
 
-
-> ![Cossacks Vodka](image-24.png)
-    
-    Cossacks Vodka
-    Cost 100 RU
-    Weight 0.50 kg
-    Statistics
-    Health rest. +1%
-    Radiation -30%
-    Hunger elim. +1%
+Though a bit tricky, these "Cossacks Vodka" bottles were a big hit with fans of the game. I wanted to test drive the waterslide decals before putting them on anything I couldn't scrub. Luckily I only needed one test drive and the "bad" one looked pretty good!
 
 #### Snork Trophy
 
