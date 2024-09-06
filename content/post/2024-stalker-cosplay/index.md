@@ -44,6 +44,7 @@ I opted instead to base my build off of a Gorka (Горка) K2 combat suit, whi
 
 There are several factions in the Zone, and I rotated between repping the Loners, Freedom, and the Monolith (glory to the rock). I ended up running into some other Loners and some Mercenaries at PAX.
 
+***
 ### The Battle Rig
 In an attempt to stick with the Soviet-surplus '90s vibe of the gear, I actually attempted to get a SMERSH (СМЕРЧ) rig to build the rest of my costume off of. 
 
@@ -59,17 +60,17 @@ The other mod I ended up needing to do was ripping out the girth straps around t
 
 I also think the camo ended up working out pretty well, and did a good job being distinct from my two-tone green suit.
 
+***
 ### The Kit
 Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
 
 ![A Stalker is always prepared...](image-20.webp)
 
-> I will eventually get around to full build logs of each of these props. Subscribe to one of my profiles to get updated!
-
+***
 #### Echo Detector
-![Reference](image-14.webp)
+![Completed Detector](image-12.webp)
 
-![Detector Internals](image-15.webp) ![Completed Detector](image-12.webp)
+![Detector Internals](image-15.webp) ![Reference](image-14.webp)
 
 This thing was an absolute blast to work on. In the video game this little device helps the player detect anomalies in their search of artifacts. How this prop works though is there is an Arduino inside which runs a program that produces a flash and a beep based on local Bluetooth Low Energy signals.
 
