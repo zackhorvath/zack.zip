@@ -60,7 +60,9 @@ I also think the camo ended up working out pretty well, and did a good job being
 ### The Kit
 Apart from the fabrics, there was exactly one objective I had when designing this costume - I wanted to make a Gauss Rifle. They say the real Gauss Rifle was the friends you made along the way, and I have to say for secondary objectives I am really happy with how the rest of the kit came out.
 
-> I will eventually get around to full build logs of each of these props for those of you interested in making your own!
+![A Stalker is always prepared...](image-20.png)
+
+> I will eventually get around to full build logs of each of these props. Subscribe to one of my profiles to get updated!
 
 #### Echo Detector
 ![Reference](image-14.png)
@@ -93,15 +95,36 @@ Here's a short build reel:
 {{< instagram C_CKh1kvfvA >}}
 
 #### Item 62 Gauss Rifle
-![Gauss Rifle In-Game](image-19.png)
+
+
+
 
 #### Cossacks Vodka
+![Decals Cut...](image-22.png)![Decals Applied!](image-23.png)
+A suprisingly easy addition to the kit, these were a big hit when converted into water bottles later on in the evening!
+
+
+> ![Cossacks Vodka](image-24.png)
+    
+    Cossacks Vodka
+    Cost 100 RU
+    Weight 0.50 kg
+    Statistics
+    Health rest. +1%
+    Radiation -30%
+    Hunger elim. +1%
 
 #### Snork Trophy
 
-## Construction Montage
+#### Off the Shelf Gear
+![fgsfds](image-21.png)
+There was some off the shelf gear I tossed into this build as well:
+* [The surprisingly popular fake cigarette](https://amzn.to/3z88O1o)
+* Oakley Combat Boots
+* Mestel SGE 400/3 Gas Mask (if you guys go the real gas mask route, get one with a diaphragm if you're going to wear it)
+* Mira Drop-Leg Gas Mask Pouch
+* Sordin Pro-X Neckband EarPro
 
-## Finishing Touches
 
 ## Ready for the Zone
 ![First Day at PAX West](image-2.png) ![The only "straight on" shot I managed to get, whoops!](image-6.png)
