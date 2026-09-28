@@ -3,12 +3,11 @@
 {{- $hero := .Params.hero }}
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">{{ $hero.eyebrow }}</div>
     <h1 class="hero__heading">{{ $hero.heading | safeHTML }}</h1>
     <p class="hero__sub">{{ $hero.sub }}</p>
     <p class="hero__body">{{ $hero.body }}</p>
     <div class="btn-row">
-      <a class="btn btn--primary" href="#logs">Read the logs</a>
+      <a class="btn btn--primary" href="#logs">Logs</a>
       <a class="btn" href="{{ "about/" | relURL }}">About</a>
       <a class="btn" href="{{ "archives/" | relURL }}">Archives</a>
     </div>

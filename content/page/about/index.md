@@ -13,27 +13,30 @@ comments: false
 license: false
 readingTime: false
 image: zack-1.jpg
-links:
-  - title: Instagram
-    description: "Mostly Cosplay Photos, Reels, and Tags"
-    website: https://www.instagram.com/horvaticus/
-    image: https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg
-  - title: Threads
-    description: "Cosplay Discussion"
-    website: https://www.threads.net/@horvaticus
-    image: https://raw.githubusercontent.com/Automattic/jetpack/trunk/projects/js-packages/social-logos/src/svg/threads.svg
-  - title: BlueSky
-    description: "Eager to see where this goes!"
-    website: https://bsky.app/profile/zack.zip
-    image: https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg
-  - title: Printables
-    description: I post most of my makes and models to Printables!
-    website: https://www.printables.com/@horvaticus
-    image: https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/printables.svg
-  - title: MakerWorld
-    description: I try to keep this a close mirror of my Printables profile, but this also includes my Bambu X1C profiles in some cases.
-    website: https://makerworld.com/en/@Horvaticus
-    image: https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/bambulab.svg
+linkGroups:
+  - title: Socials
+    links:
+      - title: Instagram
+        description: "Where most of my updates are shared"
+        website: https://www.instagram.com/horvaticus/
+      - title: Threads
+        description: "Cosplay Discussion"
+        website: https://www.threads.net/@horvaticus
+      - title: BlueSky
+        description: "Misc Discussion"
+        website: https://bsky.app/profile/zack.zip
+  - title: Downloads
+    links:
+      - title: MakerWorld
+        description: This is the main profile I share models on
+        website: https://makerworld.com/en/@Horvaticus
+      - title: Printables
+        description: I also maintain a printables page
+        website: https://www.printables.com/@horvaticus
+      - title: Cults3D
+        description: I have a Cults page for those who want to purchase models to support me
+        website: https://cults3d.com/en/users/Horvaticus/3d-models
+        icon: cube
 ---
 ### Intro
 Hi I'm Zack, I build cool shit!
@@ -63,25 +66,4 @@ Well here are a few things I like doing when I'm not crouched over a sander:
 ### Give me a shout
 I'm some variation of `@horvaticus` most places, so if you see me, feel free to reach out!
 
-***
-
-### Frequently Asked FAQs
-Some folks slide into my DMs with the following Q's...
-
-#### Do you do commissions?
-Kinda? I am still exploring how to best offer 3D printing and scanning services at this time.
-
-#### How do you handle intellectual property and licensing with comissions?
-I strictly follow the original license of any intellectual property I use in my costumes. In some cases, the designs are original, open sourced, or I have purchased a commercial license. In others, I am often using a community personal use license. I do not directly profit off of my props, I do it for fun, for me.
-
-I believe in making the best possible effort to give the original author a shout out too! It's good digital karma and keeps the creative process spinning.
-
-#### Do you prefer Printables or MakerWorld? Why do you post to both?
-Because I think it's lame when games get published to one storefront over the other, and feel the same about STL files. Creators get rewarded for total downloads and boosts for published models, but, it's more important to me that you have a choice in where you download your files from. I think the bonuses you get from MakerWorld are better (especially since I run mostly Bambu Printers these days), but I appreciate every download, like, and subscribe no matter which storefront its through!
-
-#### Do you make commissions or affiliate bucks on this?
-I create for fun, not for profit - that's what a day job is for. However, I do get some kickbacks:
-
-I get rewards for each download, print, and review on any 3D model I publish on Printables or Makerworld. These are directly redeemed in the form of spare parts or filament that go back into cosplay. Effort often goes into making these, but I don't charge for files so I feel like it's a fair trade.
-
-Occasionally I will use an Amazon affiliate link for products directly on Amazon. I get jack shit from these, but a few cents here and there goes towards buying newbie cosplayers beers at the comic con afterparty. So, know it's going to a greater cause.
+{{< links >}}

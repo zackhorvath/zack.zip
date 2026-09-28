@@ -5,8 +5,6 @@ rssFullContent = true
 favicon = "/favicon.png"
 
 description = "Build logs, prop teardowns, and long-form 3D printing and cosplay write-ups from a garage in Washington State."
-since = 2014
-region = "WASHINGTON STATE"
 license = "CC BY-NC-SA 4.0"
 licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
