@@ -1,0 +1,10 @@
+{{- /* Returns the page-bundle cover image resource (front matter `image`), or nil. */ -}}
+{{- $img := false -}}
+{{- with .Params.image -}}
+  {{- if not (strings.HasPrefix . "http") -}}
+    {{- with $.Resources.GetMatch . -}}
+      {{- if ne .MediaType.SubType "svg" }}{{ $img = . }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $img -}}

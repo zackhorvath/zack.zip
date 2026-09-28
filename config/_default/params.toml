@@ -1,142 +1,23 @@
-# Pages placed under these sections will be shown on homepage and archive page.
+# Pages placed under these sections are shown on the homepage and archive page.
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
 favicon = "/favicon.png"
 
-[footer]
+description = "Build logs, prop teardowns, and long-form 3D printing and cosplay write-ups from a garage in Washington State."
 since = 2014
-customText = "1064MFG"
+region = "WASHINGTON STATE"
+license = "CC BY-NC-SA 4.0"
+licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
 [dateFormat]
-published = "Jan 02, 2006"
-lastUpdated = "Jan 02, 2006 15:04 MST"
+published = "2006.01.02"
 
-[sidebar]
-#emoji = "🌯"
-subtitle = "3D Printing, Cosplay, Gaming, and Tech!"
-avatar = "img/avatar.jpg"
-
-[article]
-headingAnchor = false
-math = false
-readingTime = true
-
-[article.license]
-enabled = true
-default = "CC BY-NC-SA 4.0"
-
-## Widgets
-[[widgets.homepage]]
-type = "search"
-
-[[widgets.homepage]]
-type = "archives"
-
-[widgets.homepage.params]
-limit = 5
-
-[[widgets.homepage]]
-type = "categories"
-
-[widgets.homepage.params]
-limit = 10
-
-[[widgets.homepage]]
-type = "tag-cloud"
-
-[widgets.homepage.params]
-limit = 10
-
-[[widgets.page]]
-type = "toc"
-
-[opengraph.twitter]
-site = ""
-card = "summary_large_image"
-
-[colorScheme]
-toggle = true
-default = "auto"
-
-[imageProcessing.thumbnail]
-enabled = true
+# Sister site: the fabrication shop.
+[sister]
+name = "1064MFG"
+url = "https://1064mfg.com"
 
 [imageProcessing.content]
 enabled = true
 widths = [480, 1024]
-
-## Comments
-[comments]
-enabled = false
-provider = "disqus"
-
-[comments.disqusjs]
-shortname = ""
-apiUrl = ""
-apiKey = ""
-admin = ""
-adminLabel = ""
-
-[comments.utterances]
-repo = ""
-issueTerm = "pathname"
-label = ""
-
-[comments.remark42]
-host = ""
-site = ""
-locale = ""
-
-[comments.vssue]
-platform = ""
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-autoCreateIssue = false
-
-[comments.waline]
-serverURL = ""
-lang = ""
-visitor = ""
-avatar = ""
-emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-requiredMeta = ["name", "email", "url"]
-placeholder = ""
-
-[comments.waline.locale]
-admin = "Admin"
-
-[comments.twikoo]
-envId = ""
-region = ""
-path = ""
-lang = ""
-
-[comments.cactus]
-defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
-serverName = "cactus.chat"
-siteName = ""
-
-[comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
-reactionsEnabled = 1
-emitMetadata = 0
-
-[comments.gitalk]
-owner = ""
-admin = ""
-repo = ""
-clientID = ""
-clientSecret = ""
-
-[comments.cusdis]
-host = ""
-id = ""

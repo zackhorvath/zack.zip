@@ -1,0 +1,21 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">{{ if eq .Kind "term" }}{{ cond (eq .Data.Plural "categories") "CHANNEL" "TAG" }}{{ else }}INDEX{{ end }}</div>
+    <h1 class="page-head__title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-head__desc">{{ . }}</p>{{ end }}
+  </div>
+</header>
+<section class="section">
+  <div class="wrap">
+    {{- $pager := .Paginate .RegularPages.ByDate.Reverse }}
+    <h2 class="section-title"><span class="section-title__index">01</span> Entries <span class="section-title__aside">{{ len .RegularPages }} ON REEL</span></h2>
+    <div class="entries">
+      {{- range $pager.Pages }}
+      {{ partial "entry.html" (dict "page" .) }}
+      {{- end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
+</section>
+{{ end }}

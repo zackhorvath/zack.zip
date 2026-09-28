@@ -1,2 +1,2 @@
-[[imports]]
-path = "github.com/CaiJimmy/hugo-theme-stack/v4"
+# No external theme: layouts/ and assets/ in this repo are the theme.
+# Design system shared with 1064mfg.com (cassette-futurism / industrial catalog).

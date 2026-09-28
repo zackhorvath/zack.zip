@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{- $isCats := eq .Data.Plural "categories" }}
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">INDEX</div>
+    <h1 class="page-head__title">{{ cond $isCats "Log Channels" .Title }}</h1>
+  </div>
+</header>
+<section class="section">
+  <div class="wrap">
+    {{- if $isCats }}
+    <div class="channels">
+      {{- range .Data.Terms.ByCount }}
+      <a class="panel channel" href="{{ .Page.RelPermalink }}">
+        <div class="channel__head"><span class="panel__label panel__label--alt">CHANNEL</span><span class="channel__count">{{ .Count }} {{ cond (eq .Count 1) "ENTRY" "ENTRIES" }}</span></div>
+        <div class="channel__name">{{ .Page.LinkTitle }}</div>
+        {{ with .Page.Description }}<p class="channel__desc">{{ . }}</p>{{ end }}
+      </a>
+      {{- end }}
+    </div>
+    {{- else }}
+    <ul class="chips term-cloud">
+      {{- range .Data.Terms.Alphabetical }}
+      <li><a class="chip chip--tag" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span class="chip__count">{{ .Count }}</span></a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

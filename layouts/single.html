@@ -1,0 +1,83 @@
+{{ define "main" }}
+{{- $isLog := eq .Type "post" }}
+{{- $showRail := and (ne .Params.toc false) (ge (len .Fragments.HeadingsMap) 3) }}
+<article class="log">
+  <header class="page-head">
+    <div class="wrap">
+      <div class="eyebrow">
+        {{- if $isLog }}<a href="{{ "archives/" | relURL }}">LOG {{ partial "log-number.html" . }}</a>
+        {{- else }}ZACK.ZIP{{ end -}}
+      </div>
+      <h1 class="page-head__title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-head__desc">{{ . }}</p>{{ end }}
+      {{- if $isLog }}
+      <dl class="dataplate">
+        <div><dt>FILED</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat.published }}</time></dd></div>
+        {{- if gt (.Lastmod.Sub .Date).Hours 24.0 }}
+        <div><dt>REVISED</dt><dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format site.Params.dateFormat.published }}</time></dd></div>
+        {{- end }}
+        <div><dt>APPROX. READING TIME</dt><dd>{{ .ReadingTime }} MIN</dd></div>
+        <div><dt>LENGTH</dt><dd>{{ lang.FormatNumber 0 .WordCount }} WORDS</dd></div>
+        {{- with .GetTerms "categories" }}
+        <div><dt>CHANNEL</dt><dd>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a>{{ end }}</dd></div>
+        {{- end }}
+      </dl>
+      {{- end }}
+    </div>
+  </header>
+
+  {{- with partial "cover.html" . }}
+  {{- $sm := .Resize "1024x webp q85" }}
+  {{- $lg := .Resize (printf "%dx webp q85" (cond (gt .Width 2000) 2000 .Width)) }}
+  <figure class="wrap log-cover">
+    <div class="log-cover__frame reticle">
+      <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 1024w, {{ $lg.RelPermalink }} {{ $lg.Width }}w" sizes="(max-width: 1100px) 100vw, 1052px" width="{{ $lg.Width }}" height="{{ $lg.Height }}" alt="" fetchpriority="high">
+    </div>
+  </figure>
+  {{- end }}
+
+  <div class="wrap log-layout{{ if $showRail }} has-rail{{ end }}">
+    {{- if $showRail }}
+    <aside class="log-rail" aria-label="Contents">
+      <details class="panel rail" open>
+        <summary class="rail__head"><span class="panel__label">INDEX</span><span class="rail__toggle" aria-hidden="true"></span></summary>
+        {{ .TableOfContents }}
+      </details>
+    </aside>
+    {{- end }}
+    <div class="prose" data-prose>
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{- if $isLog }}
+  <footer class="wrap log-foot">
+    <div class="log-foot__rule"><span>END OF LOG {{ partial "log-number.html" . }}</span></div>
+    <div class="log-foot__grid">
+      {{- with .GetTerms "tags" }}
+      <div class="panel">
+        <span class="panel__label">TAGS</span>
+        <ul class="chips">{{ range . }}<li><a class="chip chip--tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+      </div>
+      {{- end }}
+      {{- if ne .Params.license false }}
+      <div class="panel">
+        <span class="panel__label panel__label--alt">LICENSE</span>
+        {{- $license := .Params.license | default site.Params.license }}
+        <p class="log-foot__license">This post is licensed under {{ if eq $license site.Params.license }}<a href="{{ site.Params.licenseURL }}" target="_blank" rel="license noopener">{{ $license }}</a>{{ else }}{{ $license }}{{ end }}, except where images or quotes are credited to someone else.</p>
+        <p class="log-foot__license">Built one yourself? Tag <code>@horvaticus</code>, I'd love to see it.</p>
+      </div>
+      {{- end }}
+    </div>
+    <nav class="pager" aria-label="More logs">
+      {{- with .NextInSection }}
+      <a class="panel pager__link" href="{{ .RelPermalink }}"><span class="pager__dir">&lt; NEWER LOG</span><span class="pager__title">{{ .Title }}</span></a>
+      {{- end }}
+      {{- with .PrevInSection }}
+      <a class="panel pager__link pager__link--next" href="{{ .RelPermalink }}"><span class="pager__dir">OLDER LOG &gt;</span><span class="pager__title">{{ .Title }}</span></a>
+      {{- end }}
+    </nav>
+  </footer>
+  {{- end }}
+</article>
+{{ end }}

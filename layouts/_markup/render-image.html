@@ -1,41 +1,29 @@
+{{- /* Page-bundle images get width/height, a WebP srcset, and a larger
+       rendition for the lightbox. site.js groups consecutive images into
+       captioned figures and justified galleries. */ -}}
 {{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
-{{- $Permalink := .Destination | relURL | safeURL -}}
-{{- $alt := .PlainText | safeHTML -}}
-{{- $Width := 0 -}}
-{{- $Height := 0 -}}
-{{- $Srcset := "" -}}
-
-{{/* SVG and external images won't work with gallery layout, because their width and height attributes are unknown */}}
-{{- $galleryImage := false -}}
-
-{{- if $image -}}
-	{{- $notSVG := ne (path.Ext .Destination) ".svg" -}}
-	{{- $Permalink = $image.RelPermalink -}}
-
-	{{- if $notSVG -}}
-		{{- $Width = $image.Width -}}
-		{{- $Height = $image.Height -}}
-		{{- $galleryImage = true -}}
-
-		{{- if (default true .Page.Site.Params.imageProcessing.content.enabled) -}}
-			{{- $small := $image.Resize `webp q100 480x` -}}
-			{{- $big := $image.Resize `webp q100 1024x` -}}
-			{{- $Srcset = printf `%s 480w, %s 1024w` $small.RelPermalink $big.RelPermalink -}}
-		{{- end -}}
-	{{- end -}}
+{{- $src := .Destination | relURL | safeURL -}}
+{{- $alt := .PlainText -}}
+{{- $attrs := dict -}}
+{{- if and $image (ne $image.MediaType.SubType "svg") (ne $image.MediaType.SubType "gif") -}}
+  {{- $src = $image.RelPermalink -}}
+  {{- $srcset := slice -}}
+  {{- $last := false -}}
+  {{- range site.Params.imageProcessing.content.widths -}}
+    {{- if lt . $image.Width -}}
+      {{- $r := $image.Resize (printf "%dx webp q85" .) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+      {{- $last = $r -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $full := $image -}}
+  {{- if gt $image.Width 2000 }}{{ $full = $image.Resize "2000x webp q85" }}{{ end -}}
+  {{- if $last }}{{ $src = $last.RelPermalink }}{{ end -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" $full.RelPermalink $full.Width) -}}
+  {{- $attrs = dict "width" $image.Width "height" $image.Height "srcset" (delimit $srcset ", ") "full" $full.RelPermalink -}}
 {{- end -}}
-
-<img src="{{ $Permalink }}"
-	{{ with $Width }}width="{{ . }}"{{ end }}
-	{{ with $Height }}height="{{ . }}"{{ end }}
-	{{ with $Srcset }}srcset="{{ . }}"{{ end }}
-	loading="lazy"
-	{{ with $alt }}
-		alt="{{ . }}"
-	{{ end }}
-	{{ if $galleryImage }}
-		class="gallery-image" 
-		data-flex-grow="{{ div (mul $image.Width 100) $image.Height }}"
-		data-flex-basis="{{ div (mul $image.Width 240) $image.Height }}px"
-	{{ end }}
->
+<img src="{{ $src }}"
+  {{- with $attrs }} width="{{ .width }}" height="{{ .height }}" srcset="{{ .srcset }}" sizes="(max-width: 720px) 100vw, 672px" data-full="{{ .full }}" data-ratio="{{ div (float .width) .height }}"{{ end }}
+  {{- with $alt }} alt="{{ . }}"{{ end }}
+  {{- with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- /**/ -}}

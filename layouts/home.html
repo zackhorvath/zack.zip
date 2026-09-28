@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{- $posts := (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+{{- $hero := .Params.hero }}
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">{{ $hero.eyebrow }}</div>
+    <h1 class="hero__heading">{{ $hero.heading | safeHTML }}</h1>
+    <p class="hero__sub">{{ $hero.sub }}</p>
+    <p class="hero__body">{{ $hero.body }}</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="#logs">Read the logs</a>
+      <a class="btn" href="{{ "about/" | relURL }}">About</a>
+      <a class="btn" href="{{ "archives/" | relURL }}">Archives</a>
+    </div>
+  </div>
+</section>
+
+<section id="logs" class="section">
+  <div class="wrap">
+    <h2 class="section-title"><span class="section-title__index">01</span> Latest Entries <span class="section-title__aside">{{ len $posts }} ON REEL</span></h2>
+    {{- $pager := .Paginate $posts }}
+    <div class="entries">
+      {{- range $i, $p := $pager.Pages }}
+      {{ partial "entry.html" (dict "page" $p "feature" (and (eq $i 0) (eq $pager.PageNumber 1))) }}
+      {{- end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
+</section>
+
+{{- with site.Taxonomies.categories }}
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title"><span class="section-title__index">02</span> Log Channels</h2>
+    <div class="channels">
+      {{- range $i, $t := .ByCount }}
+      <a class="panel channel" href="{{ .Page.RelPermalink }}">
+        <div class="channel__head"><span class="panel__label panel__label--alt">CH-{{ printf "%02d" (add $i 1) }}</span><span class="channel__count">{{ .Count }} {{ cond (eq .Count 1) "ENTRY" "ENTRIES" }}</span></div>
+        <div class="channel__name">{{ .Page.LinkTitle }}</div>
+        {{ with .Page.Description }}<p class="channel__desc">{{ . }}</p>{{ end }}
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+{{ end }}

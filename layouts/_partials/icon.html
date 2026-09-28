@@ -1,0 +1,2 @@
+{{- /* Inline an SVG from assets/icons by name, e.g. partial "icon.html" "brand-instagram". */ -}}
+{{- with resources.Get (printf "icons/%s.svg" .) }}{{ .Content | safeHTML }}{{ end -}}

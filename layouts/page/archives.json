@@ -1,0 +1,18 @@
+{{- $out := slice -}}
+{{- range (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse -}}
+  {{- $cats := slice }}{{ range .GetTerms "categories" }}{{ $cats = $cats | append (dict "name" .LinkTitle "url" .RelPermalink) }}{{ end -}}
+  {{- $img := "" }}{{ with partial "cover.html" . }}{{ $img = (.Fill "640x400 webp q80 Center").RelPermalink }}{{ end -}}
+  {{- $out = $out | append (dict
+      "title" .Title
+      "url" .RelPermalink
+      "date" (.Date.Format site.Params.dateFormat.published)
+      "log" (partial "log-number.html" .)
+      "minutes" .ReadingTime
+      "description" (.Description | default (.Summary | plainify | truncate 180))
+      "image" $img
+      "categories" $cats
+      "tags" (.Params.tags | default slice)
+      "content" (.Plain | htmlUnescape)
+  ) -}}
+{{- end -}}
+{{- $out | jsonify -}}

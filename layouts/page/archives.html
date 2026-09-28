@@ -1,0 +1,56 @@
+{{ define "main" }}
+{{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">INDEX</div>
+    <h1 class="page-head__title">{{ .Title }}</h1>
+    <p class="page-head__desc">Every log entry, newest first. {{ len $posts }} on the reel so far.</p>
+  </div>
+</header>
+<div data-search data-index="{{ with .OutputFormats.Get "json" }}{{ .RelPermalink }}{{ end }}">
+<section class="section section--search">
+  <div class="wrap">
+    <form class="search-box" role="search" onsubmit="return false">
+      <label for="search-input">QUERY&gt;</label>
+      <input id="search-input" type="search" name="q" autocomplete="off" spellcheck="false" placeholder="Search the logs: gauss rifle, resin, pax…">
+    </form>
+    <p class="search-status readout" aria-live="polite" data-search-status></p>
+    <div class="entries" data-search-results></div>
+  </div>
+</section>
+<div data-search-hide>
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title"><span class="section-title__index">01</span> Entries by year</h2>
+    {{- range $posts.GroupByDate "2006" }}
+    <div class="archive-year">
+      <div class="archive-year__label">{{ .Key }}</div>
+      <ol class="archive-list">
+        {{- range .Pages }}
+        <li class="archive-row">
+          <span class="archive-row__date">{{ .Date.Format site.Params.dateFormat.published }}</span>
+          <span class="archive-row__no">LOG {{ partial "log-number.html" . }}</span>
+          <a class="archive-row__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <ul class="chips">{{ range .GetTerms "categories" }}<li><a class="chip chip--channel" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+        </li>
+        {{- end }}
+      </ol>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- with site.Taxonomies.tags }}
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title"><span class="section-title__index">02</span> Tags</h2>
+    <ul class="chips term-cloud">
+      {{- range .Alphabetical }}
+      <li><a class="chip chip--tag" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span class="chip__count">{{ .Count }}</span></a></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+</div>
+</div>
+{{ end }}

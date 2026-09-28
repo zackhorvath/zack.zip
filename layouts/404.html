@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="not-found">
+  <div class="wrap">
+    <div class="terminal" data-label="SYSTEM FAULT">
+      <div class="terminal__line">&gt; SEEK <span data-path>/</span></div>
+      <div class="terminal__line">&gt; <b>ERR 404</b>: TAPE END. NO DATA AT THIS POSITION.</div>
+      <div class="terminal__line">&gt; REWIND?<span class="terminal__cursor"></span></div>
+    </div>
+    <h1 class="page-head__title">Signal lost</h1>
+    <p class="page-head__desc" style="margin-bottom:2rem">That page isn't on the reel. It may have moved when the site was rebuilt.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="{{ "/" | relURL }}">Rewind to home</a>
+      <a class="btn" href="{{ "search/" | relURL }}">Search the logs</a>
+    </div>
+  </div>
+</section>
+{{ end }}

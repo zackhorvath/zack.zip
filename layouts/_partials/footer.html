@@ -1,0 +1,24 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="plate">
+      <span class="plate__row">LOGGING SINCE {{ site.Params.since }}</span>
+      <span class="plate__row">{{ site.Params.region }}</span>
+      <span class="plate__row">Written by Zack</span>
+    </div>
+    <div class="footer-links">
+      {{ range site.Menus.social }}<a href="{{ .URL }}" target="_blank" rel="noopener me">{{ .Name | upper }}</a>{{ end }}
+      <a href="{{ "index.xml" | relURL }}">RSS</a>
+    </div>
+    {{ with site.Params.sister }}
+    <a class="footer-sister" href="{{ .url }}" target="_blank" rel="noopener">
+      {{ partial "maker-mark.html" . }}
+      <span>FABRICATION BY</span>
+      <strong><span>1064</span>MFG</strong>
+    </a>
+    {{ end }}
+    <div class="copyright">
+      &copy; {{ with site.Params.since }}{{ . }}&ndash;{{ end }}{{ now.Format "2006" }} ZACK DOT ZIP. CONTENT <a href="{{ site.Params.licenseURL }}" target="_blank" rel="license noopener">{{ site.Params.license }}</a> UNLESS OTHERWISE CREDITED.
+      BUILT WITH <a href="https://gohugo.io/" target="_blank" rel="noopener">HUGO</a>.
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,27 @@
+{{- /* Log entry card. Context: dict "page" <Page> "feature" <bool> */ -}}
+{{- $p := .page -}}
+<article class="panel entry{{ if .feature }} entry--feature{{ end }}">
+  <a class="entry__media{{ with partial "cover.html" $p }} reticle{{ end }}" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{- with partial "cover.html" $p }}
+    {{- $sm := .Fill "640x400 webp q80 Center" }}
+    {{- $lg := .Fill "1120x700 webp q80 Center" }}
+    <img src="{{ $sm.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 640w, {{ $lg.RelPermalink }} 1120w" sizes="(max-width: 860px) 100vw, {{ if $.feature }}600px{{ else }}290px{{ end }}" width="{{ $sm.Width }}" height="{{ $sm.Height }}" alt="" loading="lazy" decoding="async">
+    {{- else }}
+    <div class="no-signal"><span>NO SIGNAL</span></div>
+    {{- end }}
+  </a>
+  <div class="entry__body">
+    <div class="entry__meta">
+      <span class="panel__label">LOG {{ partial "log-number.html" $p }}</span>
+      <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format site.Params.dateFormat.published }}</time>
+      <span>APPROX. READING TIME {{ $p.ReadingTime }} MIN</span>
+    </div>
+    <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+    {{ with $p.Description }}<p class="entry__desc">{{ . }}</p>{{ else }}<p class="entry__desc">{{ $p.Summary | plainify | truncate 180 }}</p>{{ end }}
+    {{ with $p.GetTerms "categories" }}
+    <ul class="chips" aria-label="Log channels">
+      {{ range . }}<li><a class="chip chip--channel" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</article>

@@ -1,0 +1,6 @@
+{{- /* Zero-padded position of a post in publish order: LOG 0001 is the first entry. */ -}}
+{{- $n := 0 -}}
+{{- range $i, $p := (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate -}}
+  {{- if eq $p $ }}{{ $n = add $i 1 }}{{ end -}}
+{{- end -}}
+{{- return (printf "%04d" $n) -}}

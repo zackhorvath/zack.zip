@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="eyebrow">ZACK.ZIP</div>
+      <h1 class="page-head__title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-head__desc">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+  <div class="wrap log-layout">
+    <div class="prose" data-prose>
+      {{ .Content }}
+      {{- with .Params.links }}
+      <h3 id="links">Links</h3>
+      <div class="link-grid">
+        {{- range $i, $l := . }}
+        <a class="panel link-card" href="{{ $l.website }}" target="_blank" rel="noopener me">
+          <div class="link-card__head">
+            <span class="panel__label">CH-{{ printf "%02d" (add $i 1) }}</span>
+            {{- $icon := printf "brand-%s" (lower $l.title) }}
+            {{ with resources.Get (printf "icons/%s.svg" $icon) }}<span class="link-card__icon">{{ .Content | safeHTML }}</span>{{ end }}
+          </div>
+          <span class="link-card__title">{{ $l.title }}</span>
+          <span class="link-card__url">{{ replaceRE `^https?://(www\.)?` "" $l.website | strings.TrimSuffix "/" }}</span>
+          {{ with $l.description }}<p class="link-card__desc">{{ . }}</p>{{ end }}
+        </a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</article>
+{{ end }}

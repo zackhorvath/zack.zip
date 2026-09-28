@@ -1,0 +1,32 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <div class="header-group">
+      <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ site.Title }} home">
+        <span class="brand__logo">{{ partial "cassette.html" . }}</span>
+        <span class="brand__type">ZACK</span><span class="brand__mark">.ZIP</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul id="primary-nav">
+          {{- $current := . }}
+          {{- range site.Menus.main }}
+          {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+          {{- if and .Page (eq .Page.RelPermalink "/") }}{{ $active = $current.IsHome }}{{ end }}
+          <li><a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name | upper }}</a></li>
+          {{- end }}
+        </ul>
+      </nav>
+    </div>
+    <div class="header-controls">
+      <div class="mode-switch" role="group" aria-label="Display mode">
+        <button type="button" class="mode-switch__btn" data-mode="dark" aria-pressed="false">DARK</button>
+        <button type="button" class="mode-switch__btn" data-mode="light" aria-pressed="false">LIGHT</button>
+      </div>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </div>
+  {{ if and .IsPage (eq .Type "post") }}<div class="tape-progress" aria-hidden="true"></div>{{ end }}
+</header>

@@ -1,0 +1,28 @@
+/* Chroma (Hugo highlight, noClasses = false). Code blocks are always a
+   black CRT well, so this palette is fixed rather than themed. */
+.chroma { color: #d9d3c3; background: transparent; }
+.chroma .err { color: #ff5a1f; }
+.chroma .hl { display: block; background: rgba(47, 184, 166, 0.12); }
+.chroma .lnt, .chroma .ln { color: #5b5648; }
+/* keywords */
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt { color: #ff5a1f; }
+/* names */
+.chroma .na, .chroma .nb, .chroma .bp { color: #e8b923; }
+.chroma .nc, .chroma .nf, .chroma .fm, .chroma .ne, .chroma .nd { color: #7fd6c8; }
+.chroma .nt { color: #ff8a5c; }
+.chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi { color: #ece6d6; }
+/* literals */
+.chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2,
+.chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: #2fb8a6; }
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: #e8b923; }
+/* comments */
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: #6f6a5a; font-style: italic; }
+/* operators & punctuation */
+.chroma .o, .chroma .ow { color: #9a927d; }
+.chroma .p { color: #9a927d; }
+/* generic (diffs) */
+.chroma .gd { color: #ff5a1f; }
+.chroma .gi { color: #2fb8a6; }
+.chroma .gh, .chroma .gu { color: #e8b923; }
+.chroma .ge { font-style: italic; }
+.chroma .gs { font-weight: 600; }
