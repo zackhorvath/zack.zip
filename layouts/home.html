@@ -27,10 +27,27 @@
   </div>
 </section>
 
+{{- $updated := slice }}
+{{- range $posts }}{{ if partial "is-updated.html" . }}{{ $updated = $updated | append . }}{{ end }}{{ end }}
+{{- $n := 1 }}
+{{- with $updated }}
+{{- $n = 2 }}
+<section class="section">
+  <div class="wrap">
+    <h2 class="section-title"><span class="section-title__index">02</span> Recently Updated</h2>
+    <div class="entries">
+      {{- range first 3 (sort . "Lastmod" "desc") }}
+      {{ partial "entry.html" (dict "page" .) }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
 {{- with site.Taxonomies.categories }}
 <section class="section">
   <div class="wrap">
-    <h2 class="section-title"><span class="section-title__index">02</span> Log Channels</h2>
+    <h2 class="section-title"><span class="section-title__index">{{ printf "%02d" (add $n 1) }}</span> Log Channels</h2>
     <div class="channels">
       {{- range $i, $t := .ByCount }}
       <a class="panel channel" href="{{ .Page.RelPermalink }}">

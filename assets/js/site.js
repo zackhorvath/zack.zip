@@ -7,7 +7,7 @@ const pad = (n, w = 2) => String(n).padStart(w, "0");
 
 (function modeSwitch() {
   const root = document.documentElement;
-  const btns = document.querySelectorAll(".mode-switch__btn");
+  const btns = document.querySelectorAll(".mode-switch__btn[data-mode]");
   const mq = window.matchMedia("(prefers-color-scheme: light)");
   const current = () => root.getAttribute("data-theme") || (mq.matches ? "light" : "dark");
   const reflect = () => {
@@ -39,6 +39,15 @@ const pad = (n, w = 2) => String(n).padStart(w, "0");
   nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
 })();
 
+// Caption for an image: its title, else the rendered alt text (which may hold
+// credit links, see render-image.html), else plain alt. Returns false if none.
+const fillCaption = (el, img) => {
+  const title = img.getAttribute("title");
+  if (!title && img.dataset.caption) el.innerHTML = img.dataset.caption;
+  else el.textContent = title || img.alt || "";
+  return el.textContent.trim() !== "";
+};
+
 // -- figures & galleries --------------------------------------------------------
 // A paragraph containing only images becomes a captioned figure (one image)
 // or a justified gallery row (several). Captions come from alt text.
@@ -62,13 +71,11 @@ const pad = (n, w = 2) => String(n).padStart(w, "0");
     frame.className = "figure__frame";
     frame.appendChild(img);
     figure.appendChild(frame);
-    const text = img.getAttribute("title") || img.getAttribute("alt");
-    if (text) {
-      const cap = document.createElement("figcaption");
+    const cap = document.createElement("figcaption");
+    const span = document.createElement("span");
+    if (fillCaption(span, img)) {
       const b = document.createElement("b");
       b.textContent = `FIG. ${pad(fig)}`;
-      const span = document.createElement("span");
-      span.textContent = text;
       cap.append(b, span);
       figure.appendChild(cap);
     }
@@ -128,7 +135,7 @@ const pad = (n, w = 2) => String(n).padStart(w, "0");
     view.src = img.dataset.full || img.currentSrc || img.src;
     view.alt = img.alt || "";
     count.textContent = `FRAME ${pad(at + 1, 3)} / ${pad(imgs.length, 3)}`;
-    caption.textContent = img.getAttribute("title") || img.alt || "";
+    fillCaption(caption, img);
   };
 
   imgs.forEach((img, n) => {
@@ -262,7 +269,7 @@ const pad = (n, w = 2) => String(n).padStart(w, "0");
     return `<article class="panel entry search-hit">
       <a class="entry__media${p.image ? " reticle" : ""}" href="${esc(p.url)}" tabindex="-1" aria-hidden="true">${media}</a>
       <div class="entry__body">
-        <div class="entry__meta"><span class="panel__label">LOG ${esc(p.log)}</span><time>${esc(p.date)}</time><span>APPROX. READING TIME ${p.minutes} MIN</span></div>
+        <div class="entry__meta"><span class="panel__label">LOG ${esc(p.log)}</span><span class="entry__stamp">SUBMITTED: <time>${esc(p.date)}</time></span><span>APPROX. READING TIME ${p.minutes} MIN</span></div>
         <h3 class="entry__title"><a href="${esc(p.url)}">${esc(p.title)}</a></h3>
         <p class="entry__desc">${snippet(p.content || p.description, terms)}</p>
         ${chips ? `<ul class="chips">${chips}</ul>` : ""}
@@ -307,6 +314,59 @@ const pad = (n, w = 2) => String(n).padStart(w, "0");
     .then((r) => r.json())
     .then((data) => { index = data; run(); })
     .catch(() => { status.textContent = "INDEX READ ERROR"; });
+})();
+
+// -- archive table sort ------------------------------------------------------------
+// Rows carry their sort keys as data-* attributes; the dropdown picks the column
+// and the button flips direction. State is kept in the URL (?sort=title&dir=asc).
+
+(function archiveSort() {
+  const table = document.querySelector("[data-archive-table]");
+  const controls = document.querySelector("[data-archive-controls]");
+  if (!table || !controls) return;
+  const select = controls.querySelector("[data-archive-sort]");
+  const dirBtn = controls.querySelector("[data-archive-dir]");
+  const tbody = table.tBodies[0];
+  const numeric = { submitted: true, updated: true, year: true, log: true };
+  // Dates and numbers read best newest/highest first; text reads best A-Z.
+  const defaultDir = (col) => (numeric[col] ? "desc" : "asc");
+  const valid = Array.from(select.options).map((o) => o.value);
+  let col = "submitted";
+  let dir = "desc";
+
+  function render(push) {
+    const rows = Array.from(tbody.rows);
+    const key = (r) => (numeric[col] ? parseFloat(r.dataset[col]) || 0 : r.dataset[col] || "");
+    const sign = dir === "asc" ? 1 : -1;
+    rows.sort((a, b) => {
+      const x = key(a), y = key(b);
+      const c = numeric[col] ? x - y : x.localeCompare(y);
+      // Ties (same year, same category…) fall back to newest submitted first.
+      return c ? c * sign : parseFloat(b.dataset.submitted) - parseFloat(a.dataset.submitted);
+    });
+    rows.forEach((r) => tbody.appendChild(r));
+    select.value = col;
+    dirBtn.innerHTML = dir === "asc" ? "&uarr; ASC" : "&darr; DESC";
+    table.querySelectorAll("th[data-col]").forEach((th) => {
+      if (th.dataset.col === col) th.setAttribute("aria-sort", dir === "asc" ? "ascending" : "descending");
+      else th.removeAttribute("aria-sort");
+    });
+    if (push) {
+      const url = new URL(location.href);
+      if (col === "submitted" && dir === "desc") { url.searchParams.delete("sort"); url.searchParams.delete("dir"); }
+      else { url.searchParams.set("sort", col); url.searchParams.set("dir", dir); }
+      history.replaceState(null, "", url);
+    }
+  }
+
+  select.addEventListener("change", () => { col = select.value; dir = defaultDir(col); render(true); });
+  dirBtn.addEventListener("click", () => { dir = dir === "asc" ? "desc" : "asc"; render(true); });
+
+  const params = new URLSearchParams(location.search);
+  if (valid.includes(params.get("sort"))) col = params.get("sort");
+  dir = params.get("dir") === "asc" || params.get("dir") === "desc" ? params.get("dir") : defaultDir(col);
+  controls.hidden = false;
+  render(false);
 })();
 
 // -- 404: echo the requested path ---------------------------------------------------

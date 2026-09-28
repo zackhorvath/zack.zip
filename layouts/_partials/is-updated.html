@@ -1,0 +1,2 @@
+{{- /* True when a page's lastmod falls on a later day than its first-posted date. */ -}}
+{{- return (gt (.Lastmod.Format "20060102") (.Date.Format "20060102")) -}}

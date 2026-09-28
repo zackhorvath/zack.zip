@@ -12,12 +12,12 @@
       {{ with .Description }}<p class="page-head__desc">{{ . }}</p>{{ end }}
       {{- if $isLog }}
       <dl class="dataplate">
-        <div><dt>FILED</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat.published }}</time></dd></div>
-        {{- if gt (.Lastmod.Sub .Date).Hours 24.0 }}
-        <div><dt>REVISED</dt><dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format site.Params.dateFormat.published }}</time></dd></div>
+        <div><dt>FIRST POSTED</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat.published }}</time></dd></div>
+        {{- if partial "is-updated.html" . }}
+        <div><dt>LAST UPDATED</dt><dd><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format site.Params.dateFormat.published }}</time></dd></div>
         {{- end }}
         <div><dt>APPROX. READING TIME</dt><dd>{{ .ReadingTime }} MIN</dd></div>
-        <div><dt>LENGTH</dt><dd>{{ lang.FormatNumber 0 .WordCount }} WORDS</dd></div>
+        <div><dt>LENGTH</dt><dd>{{ lang.FormatNumber 0 .WordCount }} {{ cond (eq .WordCount 1) "WORD" "WORDS" }}</dd></div>
         {{- with .GetTerms "categories" }}
         <div><dt>CHANNEL</dt><dd>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle | upper }}</a>{{ end }}</dd></div>
         {{- end }}

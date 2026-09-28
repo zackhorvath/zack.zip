@@ -29,6 +29,12 @@
           "isPublishDate": true
         },
         {
+          "title": "Last updated",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
           "title": "Image",
           "name": "image",
           "type": "image",

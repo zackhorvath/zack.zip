@@ -41,7 +41,7 @@ linkGroups:
 ### Intro
 Hi I'm Zack, I build cool shit!
 
-![Mandalorian v2, by @bokeh_by_brian](458385887_1075457590758824_2149358156074040401_n.jpg) ![Witch King, by @TripleClickPhoto](image.png)
+![Mandalorian v2, by [@bokeh_by_brian](https://www.instagram.com/bokeh_by_brian/)](458385887_1075457590758824_2149358156074040401_n.jpg) ![Witch King, by [@TripleClickPhoto](https://www.instagram.com/tripleclickphoto/)](image.png)
 
 By day I am a self-taught engineer who has an extremely deep background in various computer systems and programming langauges. Tech has always been my passion in life, and I've been lucky enough to be able to turn that into a career after dropping out of college three times.
 

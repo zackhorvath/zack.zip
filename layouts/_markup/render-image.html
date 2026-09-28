@@ -3,7 +3,13 @@
        captioned figures and justified galleries. */ -}}
 {{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
 {{- $src := .Destination | relURL | safeURL -}}
-{{- $alt := .PlainText -}}
+{{- /* Alt text may contain Markdown links (photo credits). Plain text goes
+       in alt; the rendered HTML rides along in data-caption for site.js.
+       .PlainText drops text after a nested link, so derive it from .Text. */ -}}
+{{- $text := string .Text -}}
+{{- $alt := $text | plainify | htmlUnescape -}}
+{{- $caption := "" -}}
+{{- if in $text "<" }}{{ $caption = $text }}{{ end -}}
 {{- $attrs := dict -}}
 {{- if and $image (ne $image.MediaType.SubType "svg") (ne $image.MediaType.SubType "gif") -}}
   {{- $src = $image.RelPermalink -}}
@@ -25,5 +31,6 @@
 <img src="{{ $src }}"
   {{- with $attrs }} width="{{ .width }}" height="{{ .height }}" srcset="{{ .srcset }}" sizes="(max-width: 720px) 100vw, 672px" data-full="{{ .full }}" data-ratio="{{ div (float .width) .height }}"{{ end }}
   {{- with $alt }} alt="{{ . }}"{{ end }}
+  {{- with $caption }} data-caption="{{ . }}"{{ end }}
   {{- with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
 {{- /**/ -}}

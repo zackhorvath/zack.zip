@@ -13,9 +13,12 @@
   <div class="entry__body">
     <div class="entry__meta">
       <span class="panel__label">LOG {{ partial "log-number.html" $p }}</span>
-      <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format site.Params.dateFormat.published }}</time>
+      <span class="entry__stamp">SUBMITTED: <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format site.Params.dateFormat.published }}</time></span>
       <span>APPROX. READING TIME {{ $p.ReadingTime }} MIN</span>
     </div>
+    {{- if partial "is-updated.html" $p }}
+    <div class="entry__stamp entry__stamp--updated">UPDATED: <time datetime="{{ $p.Lastmod.Format "2006-01-02" }}">{{ $p.Lastmod.Format site.Params.dateFormat.published }}</time></div>
+    {{- end }}
     <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
     {{ with $p.Description }}<p class="entry__desc">{{ . }}</p>{{ else }}<p class="entry__desc">{{ $p.Summary | plainify | truncate 180 }}</p>{{ end }}
     {{ with $p.GetTerms "categories" }}

@@ -1,10 +1,11 @@
 {{ define "main" }}
-{{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $posts := (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+{{- $fmt := site.Params.dateFormat.published }}
 <header class="page-head">
   <div class="wrap">
     <div class="eyebrow">INDEX</div>
     <h1 class="page-head__title">{{ .Title }}</h1>
-    <p class="page-head__desc">Every log entry, newest first. {{ len $posts }} on the reel so far.</p>
+    <p class="page-head__desc">Every log entry. {{ len $posts }} on the reel so far.</p>
   </div>
 </header>
 <div data-search data-index="{{ with .OutputFormats.Get "json" }}{{ .RelPermalink }}{{ end }}">
@@ -21,28 +22,60 @@
 <div data-search-hide>
 <section class="section">
   <div class="wrap">
-    <h2 class="section-title"><span class="section-title__index">01</span> Entries by year</h2>
-    {{- range $posts.GroupByDate "2006" }}
-    <div class="archive-year">
-      <div class="archive-year__label">{{ .Key }}</div>
-      <ol class="archive-list">
-        {{- range .Pages }}
-        <li class="archive-row">
-          <span class="archive-row__date">{{ .Date.Format site.Params.dateFormat.published }}</span>
-          <span class="archive-row__no">LOG {{ partial "log-number.html" . }}</span>
-          <a class="archive-row__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <ul class="chips">{{ range .GetTerms "categories" }}<li><a class="chip chip--channel" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
-        </li>
-        {{- end }}
-      </ol>
+    <h2 class="section-title"><span class="section-title__index">01</span> All Entries</h2>
+    {{- /* Rows are server-rendered newest-submitted first; site.js re-sorts
+           them from the data-* values when the controls are used. */}}
+    <div class="table-controls" data-archive-controls hidden>
+      <label for="archive-sort">SORT BY</label>
+      <select id="archive-sort" data-archive-sort>
+        <option value="submitted">Submitted date</option>
+        <option value="updated">Updated date</option>
+        <option value="year">Year</option>
+        <option value="log">Log number</option>
+        <option value="title">Title</option>
+        <option value="category">Category</option>
+      </select>
+      <button type="button" class="btn btn--small" data-archive-dir aria-label="Sort direction">&darr; DESC</button>
     </div>
-    {{- end }}
+    <table class="archive-table" data-archive-table>
+      <thead>
+        <tr>
+          <th scope="col" data-col="year">Year</th>
+          <th scope="col" data-col="submitted" aria-sort="descending">Submitted</th>
+          <th scope="col" data-col="updated">Updated</th>
+          <th scope="col" data-col="log">Log</th>
+          <th scope="col" data-col="title">Title</th>
+          <th scope="col" data-col="category">Categories</th>
+          <th scope="col">Tags</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $posts }}
+        {{- $updated := partial "is-updated.html" . }}
+        {{- $cats := .GetTerms "categories" }}
+        <tr data-year="{{ .Date.Format "2006" }}"
+            data-submitted="{{ .Date.Unix }}"
+            data-updated="{{ .Lastmod.Unix }}"
+            data-log="{{ partial "log-number.html" . }}"
+            data-title="{{ lower .Title }}"
+            data-category="{{ with $cats }}{{ lower (index . 0).LinkTitle }}{{ end }}">
+          <td data-label="Year" class="archive-table__year">{{ .Date.Format "2006" }}</td>
+          <td data-label="Submitted" class="archive-table__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $fmt }}</time></td>
+          <td data-label="Updated" class="archive-table__date archive-table__updated">{{ if $updated }}<time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format $fmt }}</time>{{ else }}<span class="archive-table__none" aria-label="Not updated">&mdash;</span>{{ end }}</td>
+          <td data-label="Log" class="archive-table__log">{{ partial "log-number.html" . }}</td>
+          <td data-label="Title" class="archive-table__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+          <td data-label="Categories"><ul class="chips">{{ range $cats }}<li><a class="chip chip--channel" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul></td>
+          <td data-label="Tags" class="archive-table__tags">{{ with .GetTerms "tags" }}<ul class="chips">{{ range . }}<li><a class="chip chip--tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>{{ else }}<span class="archive-table__none" aria-label="No tags">&mdash;</span>{{ end }}</td>
+        </tr>
+        {{- end }}
+      </tbody>
+    </table>
   </div>
 </section>
 {{- with site.Taxonomies.tags }}
 <section class="section">
   <div class="wrap">
-    <h2 class="section-title"><span class="section-title__index">02</span> Tags</h2>
+    <h2 class="section-title"><span class="section-title__index">02</span> All Tags</h2>
     <ul class="chips term-cloud">
       {{- range .Alphabetical }}
       <li><a class="chip chip--tag" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span class="chip__count">{{ .Count }}</span></a></li>

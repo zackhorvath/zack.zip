@@ -8,3 +8,8 @@ enableRobotsTXT = true
 
 [pagination]
 pagerSize = 6
+
+# A post counts as updated only when its front matter sets `lastmod`
+# (never from git history or file timestamps). Backdate with `date`.
+[frontmatter]
+lastmod = ["lastmod", "date"]
