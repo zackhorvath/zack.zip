@@ -19,12 +19,13 @@ categories:
 One of the things I thought would really elevate this build would be to include game accurate decals on the laser. I had a pretty hard time finding resources on these, so I ended up making my own based on texture rips from the Fallout 4 HD pack.
 
 ### Tools Used
+#### Software
 This could be its own blog post, so I'll keep the nerd shit short.
 
 I started with the [Bethesda Archive Extractor](https://www.nexusmods.com/skyrimspecialedition/mods/974) to dump out the DDS files, which look like this:
 ![Triple Barrel Laser Texture](AssaultBarrel_d.png)
 
-From there I used the following toolchain running locally on one of my dev boxes:
+From there a series of python and machine learning libraries were used to isolate, clean up, and export the decals, running locally in my lab environment:
 ```
 game textures (.dds/.png)  ──┐
 STL stencils                 ├─► measure (NumPy/SciPy/trimesh)
@@ -37,3 +38,5 @@ A4 reference PDF (Poppler)  ──┘         │
                  curves-only SVG   600 DPI PNG     weathered PNG
                  (mm canvases)     (cairosvg)      (noise pipeline)
 ```
+
+The end results were fairly accurate to the texture rips, with some SVG cleanup happening directly in Inkscape to close bodies and make them stencil cutter friendly.
